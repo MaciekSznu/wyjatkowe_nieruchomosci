@@ -1,0 +1,29 @@
+@import './styles/normalize';
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/header';
+@import './styles/hero';
+@import './styles/about';
+@import './styles/services';
+@import './styles/contact';
+@import './styles/social';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}

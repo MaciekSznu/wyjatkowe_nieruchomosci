@@ -1,0 +1,23 @@
+@import './variables';
+@import './mixins';
+
+.social {
+  @include flex-center-center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  position: fixed;
+  right: 0;
+  bottom: calc(50vh - 15vw);
+  width: 15vw;
+  max-width: 60px;
+  height: 30vw;
+  max-height: 120px;
+
+
+  &__facebook, &__instagram {
+    width: 80%;
+    height: calc(15vw * .8);
+    background-color: red;
+  }
+}
