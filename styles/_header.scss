@@ -25,12 +25,12 @@
 
   .menu {
     position: fixed;
-    left: 0;
+    left: 100vw;
     top: 60px;
     height: calc(100vh - 2 * 60px);
     width: 100vw;
     background-color: $mobile-menu-bg-color;
-    //opacity: .6;
+    transition: transform 1s ease-in-out;
 
     @include flex-center-center;
 
@@ -55,8 +55,8 @@
     }
   }
 
-  .menu.hidden {
-    left: 100vw
+  .menu.visible {
+    transform: translateX(-100vw);
   }
 
 }

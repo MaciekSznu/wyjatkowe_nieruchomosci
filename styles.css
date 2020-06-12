@@ -375,11 +375,15 @@ template {
 
 .header .menu {
   position: fixed;
-  left: 0;
+  left: 100vw;
   top: 60px;
   height: calc(100vh - 2 * 60px);
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,8 +415,9 @@ template {
   font-weight: 800;
 }
 
-.header .menu.hidden {
-  left: 100vw;
+.header .menu.visible {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
 }
 
 .hero {
@@ -590,6 +595,7 @@ template {
   padding: 0;
   outline: rgba(255, 255, 255, 0.9);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .menu__toggler .hamburger-menu-line {
@@ -599,6 +605,10 @@ template {
   width: 100%;
   background: black;
   border-radius: 2px;
+  -webkit-transition: -webkit-transform 1s .2s ease-in-out;
+  transition: -webkit-transform 1s .2s ease-in-out;
+  transition: transform 1s .2s ease-in-out;
+  transition: transform 1s .2s ease-in-out, -webkit-transform 1s .2s ease-in-out;
 }
 
 .menu__toggler .hamburger-menu-line:after {
@@ -610,6 +620,10 @@ template {
   top: 10px;
   background: black;
   border-radius: 2px;
+  -webkit-transition: -webkit-transform 1.2s .2s ease-in-out;
+  transition: -webkit-transform 1.2s .2s ease-in-out;
+  transition: transform 1.2s .2s ease-in-out;
+  transition: transform 1.2s .2s ease-in-out, -webkit-transform 1.2s .2s ease-in-out;
 }
 
 .menu__toggler .hamburger-menu-line:before {
@@ -621,10 +635,32 @@ template {
   bottom: 10px;
   background: black;
   border-radius: 2px;
+  -webkit-transition: -webkit-transform 1s .2s ease-in-out;
+  transition: -webkit-transform 1s .2s ease-in-out;
+  transition: transform 1s .2s ease-in-out;
+  transition: transform 1s .2s ease-in-out, -webkit-transform 1s .2s ease-in-out;
 }
 
 .menu__toggler .hamburger-menu:focus {
   color: black;
+}
+
+.menu__toggler .hamburger-active .hamburger-menu-line {
+  -webkit-transform: scaleX(0.25);
+          transform: scaleX(0.25);
+  border-radius: 1px;
+}
+
+.menu__toggler .hamburger-active .hamburger-menu-line:before {
+  -webkit-transform: scaleX(8) translateX(0.5px);
+          transform: scaleX(8) translateX(0.5px);
+  border-radius: 1px;
+}
+
+.menu__toggler .hamburger-active .hamburger-menu-line:after {
+  -webkit-transform: scaleX(8) translateX(-1px);
+          transform: scaleX(8) translateX(-1px);
+  border-radius: 1px;
 }
 
 *,
