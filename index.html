@@ -5,32 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wyjątkowe nieruchomości</title>
   <link rel="stylesheet" href="styles.css">
+  <script async src="script.js"></script>
 </head>
 <body>
   <header class='header'>
     <h1 class='logo'>
-      <img class='logo__image' src="./images/logos/logo_mobile_167_60.png" alt="Logo Wyjątkowe Nieruchomości">
+      <img class='logo__image' src="./images/logos/logo_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
     </h1>
-    <nav></nav>
+    <nav class='menu hidden'>
+      <ul class="menu__list">
+        <li class="menu__list-item to-section"><a href="#section-about">o nas</a></li>
+        <li class="menu__list-item to-section"><a href="#section-services">usługi</a></li>
+        <li class="menu__list-item">
+          <a href="./krakow.html">kraków</a>
+        </li>
+        <li class="menu__list-item">
+          <a href="./zakopane.html">zakopane</a>
+        </li><li class="menu__list-item">
+          <a href="./condo.html">wakacje</a>
+        </li>
+        <li class="menu__list-item to-section">
+          <a href="#section-contact">kontakt</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <section class='hero'>
     <h2 class='hero__title'>Kraków</h2>
   </section>
-  <section class='about'>
+  <section class='about' id='section-about'>
     <h2 class='about__title'>O nas</h2>
     <p class='about__content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae amet repellendus sapiente id ipsum, officiis delectus obcaecati excepturi? Tempora est distinctio reiciendis dolorem beatae rerum asperiores tenetur officia eaque repellendus!</p>
     <p class='about__content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae amet repellendus sapiente id ipsum, officiis delectus obcaecati excepturi? Tempora est distinctio reiciendis dolorem beatae rerum asperiores tenetur officia eaque repellendus!</p>
   </section>
-  <section class='services'>
+  <section class='services' id='section-services'>
     <h2 class='services__title'>Usługi</h2>
     <p class='services__content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae amet repellendus sapiente id ipsum, officiis delectus obcaecati excepturi? Tempora est distinctio reiciendis dolorem beatae rerum asperiores tenetur officia eaque repellendus!</p>
     <p class='services__content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae amet repellendus sapiente id ipsum, officiis delectus obcaecati excepturi? Tempora est distinctio reiciendis dolorem beatae rerum asperiores tenetur officia eaque repellendus!</p>
   </section>
+  <!-- section on the left with contact icons-->
   <section class='social'>
-    <div class='social__facebook'></div>
-    <div class='social__instagram'></div>
+    <div class='social__facebook'>
+      <a class='social__facebook--link' href='https://www.facebook.com/michal.bysiek' target='_blank' rel='noopener noreferrer'></a>
+    </div>
+    <div class='social__phone'>
+      <a class='social__phone--link' href='tel:733-003-652'></a>
+    </div>
+    <div class='social__instagram'>
+      <a class='social__instagram--link' href='https://www.instagram.com/michalbysiek' target='_blank' rel='noopener noreferrer'></a>
+    </div>
   </section>
-  <footer class='contact'>
+  <section class='menu__toggler'>
+    <button class="hamburger-menu">
+      <span class="hamburger-menu-line"></span>
+    </button>
+  </section>
+  <footer class='contact' id='section-contact'>
     <h2 class='contact__title'>Kontakt</h2>
   </footer>
 </body>
