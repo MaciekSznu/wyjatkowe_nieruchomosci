@@ -10,12 +10,21 @@
   background-position: center;
   background-size: cover;
 
-    &__title {
-      margin: 0;
-      font-size: 2rem;
-      font-family: $lead-font-family;
-      font-weight: 700;
-      color: white;
-    }
+  &__title {
+    margin: 0;
+    font-size: 2rem;
+    font-family: $lead-font-family;
+    font-weight: 700;
+    color: white;
+  }
 
+  @media (min-width: 1024px) {
+    height: 80vh;
+    background-image: url('./images/heroes/hero_01_1920_1080.jpg');
+
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  
 }

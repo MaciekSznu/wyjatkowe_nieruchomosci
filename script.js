@@ -1,8 +1,14 @@
 'use strict';
 
-const click = (target, callback) => {
+const clickPreventDefault = (target, callback) => {
   target.addEventListener('click', (e) => {
     e.preventDefault();
+    return callback(e)
+  });
+}
+
+const click = (target, callback) => {
+  target.addEventListener('click', (e) => {
     return callback(e)
   });
 }
@@ -24,7 +30,8 @@ hamburgerButton.addEventListener('click', (e) => {
   hamburgerActive();
 });
 
-const mobileMenuItems = document.querySelectorAll('.menu__list-item.to-section a');
+const mobileMenuItems = document.querySelectorAll('.menu__list-item:not(.to-section) a');
+const mobileMenuItemsScroll = document.querySelectorAll('.menu__list-item.to-section a');
 const documentSections = document.querySelectorAll('*[id^="section"]');
 const documentSectionsArray = [...documentSections];
 
@@ -34,9 +41,23 @@ const scrollToSection = (i) => {
   });
 };
 
-mobileMenuItems.forEach((item, index) => {
-  click(item, () => {
+mobileMenuItemsScroll.forEach((item, index) => {
+  clickPreventDefault(item, () => {
     scrollToSection(index);
-    showMobileMenu();
+    const width = window.innerWidth;
+    if ( width < 1024 ) {
+      showMobileMenu();
+      hamburgerActive();
+    }
+  })
+});
+
+mobileMenuItems.forEach((item) => {
+  click(item, () => {
+    const width = window.innerWidth;
+    if ( width < 1024 ) {
+      showMobileMenu();
+      hamburgerActive();
+    }
   })
 });
