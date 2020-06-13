@@ -729,6 +729,132 @@ template {
   }
 }
 
+.new-offers {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.new-offers__title {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.new-offers__wrapper {
+  width: 100%;
+}
+
+.new-offers__wrapper .new-offers__single-offer {
+  width: 100%;
+  height: 150vw;
+}
+
+.new-offers__wrapper .new-offers__single-offer--image {
+  width: 100%;
+  height: 80vw;
+  background-image: url("./images/heroes/hero_01_1024_768.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description {
+  color: #d3a63b;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .main-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .5rem;
+  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .main-description--city, .new-offers__wrapper .new-offers__single-offer--description .main-description--price {
+  margin: .75rem 0;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .main-description--city {
+  text-transform: uppercase;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .5rem;
+  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--type {
+  min-width: 25%;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-icon {
+  height: 20px;
+  width: 20px;
+  margin: .25rem;
+  background-repeat: no-repeat;
+  -webkit-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
+          filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-value {
+  font-size: .8rem;
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-icon {
+  background-image: url("./images/icons/door-open.svg");
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-icon {
+  background-image: url("./images/icons/bed.svg");
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-icon {
+  background-image: url("./images/icons/bath.svg");
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-icon {
+  background-image: url("./images/icons/home.svg");
+}
+
+.new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-icon {
+  background-image: url("./images/icons/square.svg");
+}
+
 *,
 ::after,
 ::before {
