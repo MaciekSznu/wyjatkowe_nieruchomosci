@@ -1,7 +1,7 @@
 @import './variables';
 @import './mixins';
 
-.new-offers {
+.investments {
   width: 100%;
   height: auto;
   margin-top: 1rem;
@@ -20,7 +20,7 @@
   &__wrapper {
     width: 100%;
 
-    .new-offers__single-offer {
+    .investments__single-offer {
       width: 100%;
       height: auto;
 
@@ -56,25 +56,32 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          flex-wrap: wrap;
           padding: 0 .5rem;
           border-bottom: 1px solid rgba($new-offer-font-color, .5);
 
           &--type {
-            min-width: 25%;
+            width:100%;
+            text-align: center;
+            //text-decoration: underline;
+            text-transform: uppercase;
+            font-weight: 600;
+            //height: auto;
+            //border-bottom: 1px solid rgba($new-offer-font-color, .5);
           }
 
-          &--rooms, &--bedrooms,&--bathrooms,&--area, &--ground-area {
+          &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            padding: .5rem;
 
             .description-icon {
               height: 20px;
               width: 20px;
               margin: .25rem;
               background-repeat: no-repeat;
-              position: relative;
               z-index: -1;
               filter: $icons-filter;
             }
@@ -108,9 +115,9 @@
             }
           }
 
-          &--ground-area {
+          &--price {
             .description-icon {
-              background-image: url('./images/icons/square.svg');
+              background-image: url('./images/icons/money-bill-wave.svg');
             }
           }
         }
