@@ -1,0 +1,298 @@
+@import './variables';
+@import './mixins';
+
+.single-offer {
+  width: 100%;
+  height: auto;
+
+  &__gallery {
+    width: 100%;
+    height: 50vh;
+    max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &--image {
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      @media (min-width: 1024px) {
+        width: 33.33%;
+      }
+
+    }
+
+    &--image:nth-child(1) {
+      background-image: url('./images/gallery/livingroom_1000_600.jpg');
+    }
+
+    &--image:nth-child(2) {
+      background-image: url('./images/gallery/bedroom_1092_600.jpg');
+    }
+
+    &--image:nth-child(3) {
+      background-image: url('./images/gallery/kitchen_1067_600.jpg');
+    }
+
+    &--image:nth-child(4) {
+      background-image: url('./images/gallery/bathroom_900_600.jpg');
+    }
+  }
+  
+  &__summary {
+    position: sticky;
+    opacity: 1;
+    top: $top-bar-height;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1rem;
+    background-color: $summary-bg-color;
+    font-family: $text-font-family;
+    color: $summary-font-color;
+    font-size: 1.15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-price, &-localization, &-data {
+      display: flex;
+
+      p {
+        margin: .5rem 0 .5rem 1rem,
+      }
+    }
+
+    &-data--area, &-data--rooms {
+      border-right: 1px solid white;
+      padding-right: 1rem;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: $description-bg-color;
+
+    &--title {
+      margin: .8rem 0;
+      font-size: $single-offer-title-font-size;
+      font-weight: 700;
+      line-height: 125%;
+      font-family: $lead-font-family;
+      color: $single-offer-title-font-color;
+    }
+
+    &--localization, &--property, &--info, &--list {
+      .title, .description, .list {
+        margin: .8rem 0;
+        font-family: $text-font-family;
+      }
+
+      .title {
+        font-size: $single-offer-subtitle-font-size;
+        font-weight: 600;
+        color: $single-offer-subtitle-font-color;
+      }
+
+      .description, .list {
+        font-size: $single-offer-text-font-size;
+        font-weight: 400;
+        color: $single-offer-text-font-color;
+      }
+
+      .list {
+        padding: 0 0 0 1.25rem;
+
+        .list-item {
+          padding-bottom: .4rem;
+        }
+      }
+    }
+    
+  }
+
+
+
+
+
+      // &--image {
+      //   width: 100%;
+      //   height: 80vw;
+      //   max-height: 440px;
+      //   background-image: url('./images/heroes/hero_01_1024_768.jpg');
+      //   background-position: center;
+      //   background-size: cover;
+      // }
+
+      // &--description {
+      //   color: $new-offer-font-color;
+      //   font-family: $text-font-family;
+        
+      //   .main-description {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     align-items: center;
+      //     padding: 0 .5rem;
+      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
+
+      //     &--city, &--price {
+      //       margin: .75rem 0;
+      //     }
+
+      //     &--city {
+      //       text-transform: uppercase;
+      //     }
+      //   }
+
+      //   .additional-description {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     align-items: center;
+      //     flex-wrap: wrap;
+      //     padding: 0 .5rem;
+      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
+
+      //     &--type {
+      //       width:100%;
+      //       text-align: center;
+      //       text-transform: uppercase;
+      //       font-weight: 600;
+      //     }
+
+      //     &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
+      //       display: flex;
+      //       flex-direction: column;
+      //       align-items: center;
+      //       justify-content: space-between;
+      //       padding: .5rem;
+
+      //       .description-icon {
+      //         height: 20px;
+      //         width: 20px;
+      //         margin: .25rem;
+      //         background-repeat: no-repeat;
+      //         z-index: -1;
+      //         filter: $icons-filter;
+      //       }
+
+      //       .description-value {
+      //         font-size: .7rem;
+      //       }
+      //     }
+
+      //     &--rooms {
+      //       .description-icon {
+      //         background-image: url('./images/icons/door-open.svg');
+      //       }
+      //     }
+
+      //     &--bedrooms {
+      //       .description-icon {
+      //         background-image: url('./images/icons/bed.svg');
+      //       }
+      //     }
+
+      //     &--bathrooms {
+      //       .description-icon {
+      //         background-image: url('./images/icons/bath.svg');
+      //       }
+      //     }
+
+      //     &--area {
+      //       .description-icon {
+      //         background-image: url('./images/icons/home.svg');
+      //       }
+      //     }
+
+      //     &--price {
+      //       .description-icon {
+      //         background-image: url('./images/icons/money-bill-wave.svg');
+      //       }
+      //     }
+      //   }
+
+      //   .long-description {
+      //     display: none;
+      //   }
+
+      //   .show-offer {
+      //     @include flex-center-center;
+      //     @include show-offer-anchor;
+
+      //     height: 60px;
+      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
+      //   }
+      // }
+
+      // @media (min-width: 768px) {
+      //   width: 50%;
+
+      //   &--image {
+      //     height: 35vw;
+      //   }
+      // }
+
+      // @media (min-width: 1024px) {
+      //   width: 100%;
+      //   max-width: 1280px;
+      //   margin: 0 auto;
+      //   display: flex;
+      //   border: 1px solid rgba($new-offer-font-color, .5);
+
+      //   &--image {
+      //     width: 50%;
+      //     height: auto;
+      //   }
+
+      //   &--description {
+      //     width: 50%;
+
+      //     .main-description {
+      //       height: 10%;
+      //       padding: 0 3rem;
+      //     }
+
+      //     .additional-description {
+      //       height: 25%;
+      //       padding: 0 3rem;
+      //       border-bottom: none;
+
+      //       &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
+
+      //         .description-icon {
+      //           height: 25px;
+      //           width: 25px;
+      //         }
+  
+      //         .description-value {
+      //           font-size: .8rem;
+      //         }
+      //       }
+      //     }
+
+      //     .long-description {
+      //       height: 50%;
+      //       display: flex;
+      //       flex-direction: column;
+      //       align-items: center;
+      //       justify-content: center;
+      //       padding: 2rem;
+      //     }
+
+      //     .show-offer {
+      //       height: 15%;
+      //       border-bottom: none;
+      //     }
+      //   }
+      // }
+    }
+  

@@ -9,9 +9,23 @@ $mobile-menu-font-family: 'Abhaya Libre', serif;
 $mobile-menu-font-weight: 800;
 $mobile-menu-font-color:#d3a63b;
 $mobile-menu-bg-color: #ffffff;
+$top-bar-height: 60px;
 
 $desktop-menu-font-size: 1.2rem;
 
 $icons-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
 
 $new-offer-font-color: #d3a63b;
+
+//$summary-bg-color: rgba(#d3a63b, .5);
+$summary-bg-color: #e9d29d;
+$description-bg-color: rgba(#d3a63b, .1);
+$summary-font-color: rgba(#1d2731, .8);
+$single-offer-title-font-size: 1.5rem;
+$single-offer-subtitle-font-size: 1.25rem;
+$single-offer-text-font-size: 1.1rem;
+
+$single-offer-title-font-color: #0a1612;
+$single-offer-subtitle-font-color: #1a2930;
+$single-offer-text-font-color: #1d2731;
+
