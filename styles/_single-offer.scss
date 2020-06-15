@@ -57,7 +57,6 @@
     font-family: $text-font-family;
     color: $summary-font-color;
     font-size: 1.15rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,179 +119,40 @@
     
   }
 
-
-
-
-
-      // &--image {
-      //   width: 100%;
-      //   height: 80vw;
-      //   max-height: 440px;
-      //   background-image: url('./images/heroes/hero_01_1024_768.jpg');
-      //   background-position: center;
-      //   background-size: cover;
-      // }
-
-      // &--description {
-      //   color: $new-offer-font-color;
-      //   font-family: $text-font-family;
-        
-      //   .main-description {
-      //     display: flex;
-      //     justify-content: space-between;
-      //     align-items: center;
-      //     padding: 0 .5rem;
-      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
-
-      //     &--city, &--price {
-      //       margin: .75rem 0;
-      //     }
-
-      //     &--city {
-      //       text-transform: uppercase;
-      //     }
-      //   }
-
-      //   .additional-description {
-      //     display: flex;
-      //     justify-content: space-between;
-      //     align-items: center;
-      //     flex-wrap: wrap;
-      //     padding: 0 .5rem;
-      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
-
-      //     &--type {
-      //       width:100%;
-      //       text-align: center;
-      //       text-transform: uppercase;
-      //       font-weight: 600;
-      //     }
-
-      //     &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
-      //       display: flex;
-      //       flex-direction: column;
-      //       align-items: center;
-      //       justify-content: space-between;
-      //       padding: .5rem;
-
-      //       .description-icon {
-      //         height: 20px;
-      //         width: 20px;
-      //         margin: .25rem;
-      //         background-repeat: no-repeat;
-      //         z-index: -1;
-      //         filter: $icons-filter;
-      //       }
-
-      //       .description-value {
-      //         font-size: .7rem;
-      //       }
-      //     }
-
-      //     &--rooms {
-      //       .description-icon {
-      //         background-image: url('./images/icons/door-open.svg');
-      //       }
-      //     }
-
-      //     &--bedrooms {
-      //       .description-icon {
-      //         background-image: url('./images/icons/bed.svg');
-      //       }
-      //     }
-
-      //     &--bathrooms {
-      //       .description-icon {
-      //         background-image: url('./images/icons/bath.svg');
-      //       }
-      //     }
-
-      //     &--area {
-      //       .description-icon {
-      //         background-image: url('./images/icons/home.svg');
-      //       }
-      //     }
-
-      //     &--price {
-      //       .description-icon {
-      //         background-image: url('./images/icons/money-bill-wave.svg');
-      //       }
-      //     }
-      //   }
-
-      //   .long-description {
-      //     display: none;
-      //   }
-
-      //   .show-offer {
-      //     @include flex-center-center;
-      //     @include show-offer-anchor;
-
-      //     height: 60px;
-      //     border-bottom: 1px solid rgba($new-offer-font-color, .5);
-      //   }
-      // }
-
-      // @media (min-width: 768px) {
-      //   width: 50%;
-
-      //   &--image {
-      //     height: 35vw;
-      //   }
-      // }
-
-      // @media (min-width: 1024px) {
-      //   width: 100%;
-      //   max-width: 1280px;
-      //   margin: 0 auto;
-      //   display: flex;
-      //   border: 1px solid rgba($new-offer-font-color, .5);
-
-      //   &--image {
-      //     width: 50%;
-      //     height: auto;
-      //   }
-
-      //   &--description {
-      //     width: 50%;
-
-      //     .main-description {
-      //       height: 10%;
-      //       padding: 0 3rem;
-      //     }
-
-      //     .additional-description {
-      //       height: 25%;
-      //       padding: 0 3rem;
-      //       border-bottom: none;
-
-      //       &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
-
-      //         .description-icon {
-      //           height: 25px;
-      //           width: 25px;
-      //         }
-  
-      //         .description-value {
-      //           font-size: .8rem;
-      //         }
-      //       }
-      //     }
-
-      //     .long-description {
-      //       height: 50%;
-      //       display: flex;
-      //       flex-direction: column;
-      //       align-items: center;
-      //       justify-content: center;
-      //       padding: 2rem;
-      //     }
-
-      //     .show-offer {
-      //       height: 15%;
-      //       border-bottom: none;
-      //     }
-      //   }
-      // }
+  @media (min-width: 768px) {
+    &__summary {
+      padding: 1rem;
     }
-  
+
+    &__description {
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__summary {
+      height: 90px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &-data--year {
+        padding-right: 1rem;
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--list, &--title {
+        width: 100%;
+      }
+
+    }
+    &__description > h2, &__description > div {
+      max-width: 1280px;
+    }
+  }
+}

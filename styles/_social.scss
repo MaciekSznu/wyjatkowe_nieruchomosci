@@ -6,7 +6,7 @@
   align-items: flex-end;
   justify-content: space-between;
   flex-direction: column;
-
+  z-index: 5;
   position: fixed;
   right: 0;
   bottom: calc(50vh - 90px);
