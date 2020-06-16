@@ -346,7 +346,7 @@ template {
 .header {
   width: 100%;
   height: 60px;
-  background-color: #ffffff;
+  background-color: #041549;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -366,6 +366,7 @@ template {
   height: 100%;
   max-height: 60px;
   margin: 0;
+  background-color: #041549;
 }
 
 .header .logo__image {
@@ -379,7 +380,7 @@ template {
   top: 60px;
   height: calc(100vh - 2 * 60px);
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #041549;
   -webkit-transition: -webkit-transform 1s .2s ease-in-out;
   transition: -webkit-transform 1s .2s ease-in-out;
   transition: transform 1s .2s ease-in-out;
@@ -409,7 +410,7 @@ template {
 }
 
 .header .menu__list-item a {
-  color: #d3a63b;
+  color: #ffffff;
   text-decoration: none;
   font-size: 2rem;
   font-family: "Abhaya Libre", serif;
@@ -429,7 +430,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: #ffffff;
   }
   .header .logo {
     max-width: 190px;
@@ -461,8 +461,8 @@ template {
     margin: 0;
   }
   .header .menu__list-item a {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 300;
   }
 }
 
@@ -724,16 +724,16 @@ template {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #ffffff;
+  background-color: #041549;
 }
 
 .menu__toggler .hamburger-menu {
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: #041549;
   border: none;
   padding: 0;
-  outline: #ffffff;
+  outline: #041549;
   cursor: pointer;
   overflow: hidden;
 }
@@ -743,7 +743,7 @@ template {
   display: block;
   height: 4px;
   width: 100%;
-  background: #d3a63b;
+  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: -webkit-transform 1s .2s ease;
   transition: -webkit-transform 1s .2s ease;
@@ -758,7 +758,7 @@ template {
   width: 50%;
   left: 50%;
   top: 10px;
-  background: #d3a63b;
+  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: -webkit-transform 1.2s .2s ease;
   transition: -webkit-transform 1.2s .2s ease;
@@ -773,7 +773,7 @@ template {
   width: 50%;
   left: 0;
   bottom: 10px;
-  background: #d3a63b;
+  background: #ffffff;
   border-radius: 2px;
   -webkit-transition: -webkit-transform 1s .2s ease;
   transition: -webkit-transform 1s .2s ease;
@@ -782,7 +782,7 @@ template {
 }
 
 .menu__toggler .hamburger-menu:focus {
-  color: #d3a63b;
+  color: #ffffff;
 }
 
 .menu__toggler .hamburger-active .hamburger-menu-line {
@@ -1351,9 +1351,9 @@ template {
   width: 100%;
   height: 20vh;
   margin-top: 1rem;
-  background-color: #e9d29d;
+  background-color: rgba(183, 200, 252, 0.5);
   font-family: "Source Sans Pro", sans-serif;
-  color: rgba(29, 39, 49, 0.8);
+  color: #0a1612;
   font-size: 1.15rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,7 +1378,7 @@ template {
 }
 
 .single-offer__summary-data--area, .single-offer__summary-data--rooms {
-  border-right: 1px solid white;
+  border-right: 1px solid #0a1612;
   padding-right: 1rem;
 }
 
@@ -1386,7 +1386,7 @@ template {
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: rgba(211, 166, 59, 0.1);
+  background-color: rgba(183, 200, 252, 0.2);
 }
 
 .single-offer__description--title {

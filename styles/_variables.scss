@@ -1,28 +1,29 @@
 $menu-font-color: #000000;
 $hero-font-color: #929292;
 
-$header-bg-color: rgba(#000000, .1);
+$header-bg-color: #041549;
 $text-font-family: 'Source Sans Pro',sans-serif;
 $lead-font-family: 'Abhaya Libre', serif;
 $mobile-menu-font-size: 2rem;
 $mobile-menu-font-family: 'Abhaya Libre', serif;
 $mobile-menu-font-weight: 800;
-$mobile-menu-font-color:#d3a63b;
-$mobile-menu-bg-color: #ffffff;
+$mobile-menu-font-color: #ffffff;
+$mobile-menu-bg-color: #041549;
 $top-bar-height: 60px;
 
-$desktop-menu-font-size: 1.4rem;
-$desktop-menu-font-weight: 500;
+$desktop-menu-font-size: 1.1rem;
+$desktop-menu-font-weight: 300;
 
 
 $icons-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
 
 $new-offer-font-color: #d3a63b;
 
-//$summary-bg-color: rgba(#d3a63b, .5);
-$summary-bg-color: #e9d29d;
-$description-bg-color: rgba(#d3a63b, .1);
-$summary-font-color: rgba(#1d2731, .8);
+$summary-bg-color: rgba(#b7c8fc, .5);
+
+$description-bg-color: rgba(#b7c8fc, .2);
+$summary-font-color: #0a1612;
+
 $single-offer-title-font-size: 1.5rem;
 $single-offer-subtitle-font-size: 1.25rem;
 $single-offer-text-font-size: 1.1rem;
