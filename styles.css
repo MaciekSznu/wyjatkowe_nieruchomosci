@@ -349,6 +349,7 @@ template {
   background-color: #ffffff;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header .logo {
@@ -672,7 +673,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 5;
+  z-index: 10;
   position: fixed;
   right: 0;
   bottom: calc(50vh - 90px);
