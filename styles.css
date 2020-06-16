@@ -681,7 +681,7 @@ template {
   z-index: 10;
   position: fixed;
   right: 0;
-  bottom: calc(50vh - 90px);
+  bottom: calc(25vh - 90px);
   width: 15vw;
   max-width: 60px;
   height: 180px;
@@ -1256,8 +1256,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-top: 1px solid rgba(29, 39, 49, 0.5);
-    border-bottom: 1px solid rgba(29, 39, 49, 0.5);
+    border: 1px solid rgba(29, 39, 49, 0.5);
   }
   .investments__wrapper .investments__single-offer--image {
     width: 50%;
@@ -1448,6 +1447,7 @@ template {
 
 @media (min-width: 1024px) {
   .single-offer__summary {
+    padding: 1rem calc((100vw - 1280px) / 2);
     height: 90px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

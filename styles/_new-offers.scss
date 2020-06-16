@@ -20,7 +20,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-//    justify-content: center;
     align-items: center;
 
     .new-offers__single-offer {
@@ -41,6 +40,8 @@
       &--description {
         color: $new-offer-font-color;
         font-family: $text-font-family;
+
+
         
         .main-description {
           display: flex;

@@ -131,6 +131,7 @@
 
   @media (min-width: 1024px) {
     &__summary {
+      padding: 1rem calc((100vw - 1280px) / 2);
       height: 90px;
       flex-direction: row;
       justify-content: space-between;
