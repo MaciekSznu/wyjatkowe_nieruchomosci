@@ -353,6 +353,14 @@ template {
 }
 
 .header .logo {
+  width: 100%;
+  height: 100%;
+  max-height: 60px;
+  margin: 0;
+  background-color: #041549;
+}
+
+.header .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,12 +372,9 @@ template {
           align-items: center;
   width: 100%;
   height: 100%;
-  max-height: 60px;
-  margin: 0;
-  background-color: #041549;
 }
 
-.header .logo__image {
+.header .logo a .logo__image {
   height: 90%;
   width: auto;
 }
@@ -511,7 +516,7 @@ template {
   height: 32px;
   max-width: 160px;
   color: white;
-  background-color: #d3a63b;
+  background-color: #1d2731;
   line-height: 26px;
   text-align: center;
   text-decoration: none;
@@ -520,13 +525,13 @@ template {
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid rgba(211, 166, 59, 0.5);
+  border: 2px solid rgba(29, 39, 49, 0.5);
   -webkit-transition: background-color 1s ease, color 1s ease;
   transition: background-color 1s ease, color 1s ease;
 }
 
 .hero .show-offer a:hover {
-  color: #d3a63b;
+  color: #1d2731;
   background-color: white;
 }
 
@@ -694,8 +699,17 @@ template {
   height: 100%;
   background-repeat: no-repeat;
   opacity: .9;
-  -webkit-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
-          filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
+  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+  -webkit-transition: -webkit-filter .5s .2s ease-in-out;
+  transition: -webkit-filter .5s .2s ease-in-out;
+  transition: filter .5s .2s ease-in-out;
+  transition: filter .5s .2s ease-in-out, -webkit-filter .5s .2s ease-in-out;
+}
+
+.social__facebook--link.filtered, .social__phone--link.filtered, .social__instagram--link.filtered {
+  -webkit-filter: invert(93%) sepia(44%) saturate(7%) hue-rotate(128deg) brightness(105%) contrast(102%);
+          filter: invert(93%) sepia(44%) saturate(7%) hue-rotate(128deg) brightness(105%) contrast(102%);
 }
 
 .social__facebook--link {
@@ -856,7 +870,7 @@ template {
 }
 
 .new-offers__wrapper .new-offers__single-offer--description {
-  color: #d3a63b;
+  color: #1d2731;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -871,7 +885,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .main-description--city, .new-offers__wrapper .new-offers__single-offer--description .main-description--price {
@@ -895,7 +909,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--type {
@@ -926,8 +940,8 @@ template {
   margin: .25rem;
   background-repeat: no-repeat;
   z-index: -1;
-  -webkit-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
-          filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
+  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-value {
@@ -966,7 +980,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .show-offer a {
@@ -974,7 +988,7 @@ template {
   height: 30px;
   max-width: 160px;
   color: white;
-  background-color: #d3a63b;
+  background-color: #1d2731;
   line-height: 26px;
   text-align: center;
   text-decoration: none;
@@ -982,13 +996,13 @@ template {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 1rem;
-  border: 2px solid rgba(211, 166, 59, 0.5);
+  border: 2px solid rgba(29, 39, 49, 0.5);
   -webkit-transition: background-color 1s ease, color 1s ease;
   transition: background-color 1s ease, color 1s ease;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .show-offer a:hover {
-  color: #d3a63b;
+  color: #1d2731;
   background-color: white;
 }
 
@@ -1084,7 +1098,7 @@ template {
 }
 
 .investments__wrapper .investments__single-offer--description {
-  color: #d3a63b;
+  color: #1d2731;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -1099,7 +1113,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .main-description--city, .investments__wrapper .investments__single-offer--description .main-description--price {
@@ -1123,7 +1137,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--type {
@@ -1156,8 +1170,8 @@ template {
   margin: .25rem;
   background-repeat: no-repeat;
   z-index: -1;
-  -webkit-filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
-          filter: invert(72%) sepia(60%) saturate(515%) hue-rotate(355deg) brightness(88%) contrast(87%);
+  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--area .description-value, .investments__wrapper .investments__single-offer--description .additional-description--price .description-value {
@@ -1199,7 +1213,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+  border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .show-offer a {
@@ -1207,7 +1221,7 @@ template {
   height: 30px;
   max-width: 160px;
   color: white;
-  background-color: #d3a63b;
+  background-color: #1d2731;
   line-height: 26px;
   text-align: center;
   text-decoration: none;
@@ -1215,13 +1229,13 @@ template {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 1rem;
-  border: 2px solid rgba(211, 166, 59, 0.5);
+  border: 2px solid rgba(29, 39, 49, 0.5);
   -webkit-transition: background-color 1s ease, color 1s ease;
   transition: background-color 1s ease, color 1s ease;
 }
 
 .investments__wrapper .investments__single-offer--description .show-offer a:hover {
-  color: #d3a63b;
+  color: #1d2731;
   background-color: white;
 }
 
@@ -1242,8 +1256,8 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-top: 1px solid rgba(211, 166, 59, 0.5);
-    border-bottom: 1px solid rgba(211, 166, 59, 0.5);
+    border-top: 1px solid rgba(29, 39, 49, 0.5);
+    border-bottom: 1px solid rgba(29, 39, 49, 0.5);
   }
   .investments__wrapper .investments__single-offer--image {
     width: 50%;
@@ -1351,7 +1365,7 @@ template {
   width: 100%;
   height: 20vh;
   margin-top: 1rem;
-  background-color: rgba(183, 200, 252, 0.5);
+  background-color: #dbe3fd;
   font-family: "Source Sans Pro", sans-serif;
   color: #0a1612;
   font-size: 1.15rem;
@@ -1386,7 +1400,7 @@ template {
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: rgba(183, 200, 252, 0.2);
+  background-color: #f1f4fe;
 }
 
 .single-offer__description--title {

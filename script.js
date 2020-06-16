@@ -5,13 +5,19 @@ const clickPreventDefault = (target, callback) => {
     e.preventDefault();
     return callback(e)
   });
-}
+};
 
 const click = (target, callback) => {
   target.addEventListener('click', (e) => {
     return callback(e)
   });
-}
+};
+
+const socialAsideButtons = document.querySelectorAll('a[class^="social"][class$="link"]');
+
+const changeSocialColors = () => socialAsideButtons.forEach((item) => {
+  item.classList.toggle('filtered');
+});
 
 const hamburgerButton = document.querySelector('.hamburger-menu');
 const mobileMenu = document.querySelector('.menu');
@@ -28,6 +34,7 @@ const hamburgerActive = () => {
 hamburgerButton.addEventListener('click', (e) => {
   showMobileMenu();
   hamburgerActive();
+  changeSocialColors();
 });
 
 const mobileMenuItems = document.querySelectorAll('.menu__list-item:not(.to-section) a');
@@ -41,6 +48,7 @@ const scrollToSection = (i) => {
   });
 };
 
+
 mobileMenuItemsScroll.forEach((item, index) => {
   clickPreventDefault(item, () => {
     scrollToSection(index);
@@ -48,6 +56,7 @@ mobileMenuItemsScroll.forEach((item, index) => {
     if ( width < 1024 ) {
       showMobileMenu();
       hamburgerActive();
+      changeSocialColors();
     }
   })
 });
@@ -58,6 +67,7 @@ mobileMenuItems.forEach((item) => {
     if ( width < 1024 ) {
       showMobileMenu();
       hamburgerActive();
+      changeSocialColors();
     }
   })
 });

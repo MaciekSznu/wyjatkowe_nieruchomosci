@@ -26,6 +26,11 @@
       background-repeat: no-repeat;
       opacity: .9;
       filter: $icons-filter;
+      transition: filter .5s .2s ease-in-out;
+    }
+
+    &--link.filtered {
+      filter: $active-menu-icons-filter;
     }
   }
 
