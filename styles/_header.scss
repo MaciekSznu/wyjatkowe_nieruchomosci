@@ -52,6 +52,7 @@
         margin-bottom: 1rem;
 
         a {
+          letter-spacing: 3px;
           color: $mobile-menu-font-color;
           text-decoration: none;
           font-size: $mobile-menu-font-size;
@@ -69,6 +70,7 @@
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
+    
 
     .logo {
       max-width: 190px;
@@ -89,18 +91,31 @@
         flex-wrap: nowrap;
         justify-content: space-evenly;
 
-
         &-item {
           margin: 0;
+          min-width: 100px;
+          border-bottom: 2px solid transparent;
+          transition: border-color 1s ease;
+
+          &:hover {
+            border-color: $desktop-menu-font-color;
+          }
 
           a {
+            letter-spacing: 1px;
+            font-family: $desktop-menu-font-family;
             font-size: $desktop-menu-font-size;
             font-weight: $desktop-menu-font-weight;
+            color: $desktop-menu-font-color;
           }
         }
       }
     }
 
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 calc((100% - 1280px) / 2);
   }
 
 }

@@ -6,25 +6,106 @@
   height: auto;
   margin-top: 1rem;
   margin-bottom: 60px;
-  padding: .5rem;
+  padding: 2rem 1rem;
+  background-color: $mobile-contact-bg-color;
+  @include flex-center-center;
+  flex-direction: column;
 
-    &__title {
-      margin: 0;
-      font-size: 2rem;
-      font-family: $lead-font-family;
-      font-weight: 700;
-      color: black;
-      text-align: center;
-    }
+  // &__title {
+  //   margin: 1rem;
+  //   font-size: 2rem;
+  //   font-family: $lead-font-family;
+  //   font-weight: 700;
+  //   color: $contact-font-color;
+  //   text-align: center;
+  // }
 
-    &__content {
+  &--adress-wrapper {
+    @include flex-center-center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .contact__content {
       margin: 0;
       font-size: 1rem;
       font-family: $text-font-family;
-      font-weight: 400;
-      color: black;
+      font-weight: 300;
+      color: $contact-font-color;
       margin-bottom: .5rem;
+
+      &--company-name {
+        font-family: $lead-font-family;
+        font-size: 1.2rem;
+        margin: .8rem;
+        color: $contact-font-color;
+        text-transform: uppercase;
+      }
+      
+      &--cta {
+        @include contact-anchor;
+        @include flex-center-center;
+        height: 36px;
+        width: 200px;
+        border: 1px solid $contact-cta-bg-color;
+        margin-top: .5rem;
+        background-color: $contact-cta-bg-color;
+        transition: background-color 1s ease;
+
+        &:hover {
+          background-color: $contact-cta-border-color;
+        }
+
+        &:hover a {
+          color: $contact-cta-bg-color;
+        }
+      }
     }
+  }
+
+  &--footer-menu-wrapper {
+    width: 100%;
+    @include flex-center-center;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+
+    .footer-menu {
+      margin-top: 1rem;
+
+      &__list {
+        width: 200px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        text-align: center;
+        @include flex-center-center;
+        flex-direction: column;
+  
+        &-item {
+          width: 100px;
+          margin-bottom: .5rem;
+          border-bottom: 1px solid transparent;
+          transition: border-color 1s ease;
+
+          &:hover {
+            border-color: $footer-mobile-menu-font-color;
+          }
+  
+          a {
+            position: relative;
+            color: $footer-mobile-menu-font-color;
+            text-decoration: none;
+            font-size: $footer-mobile-menu-font-size;
+            font-family: $footer-mobile-menu-font-family;
+            font-weight: $footer-mobile-menu-font-weight;
+          }
+
+
+        }
+      }
+    }
+  }
+
   
   @media (min-width: 1024px) {
     margin-bottom: 0;

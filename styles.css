@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -415,11 +415,12 @@ template {
 }
 
 .header .menu__list-item a {
+  letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 800;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
 }
 
 .header .menu.visible {
@@ -464,10 +465,26 @@ template {
   }
   .header .menu__list-item {
     margin: 0;
+    min-width: 100px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-color 1s ease;
+    transition: border-color 1s ease;
+  }
+  .header .menu__list-item:hover {
+    border-color: rgba(255, 255, 255, 0.8);
   }
   .header .menu__list-item a {
-    font-size: 1.1rem;
-    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding: 0 calc((100% - 1280px) / 2);
   }
 }
 
@@ -513,26 +530,27 @@ template {
 
 .hero .show-offer a {
   width: 50%;
-  height: 32px;
+  height: 36px;
   max-width: 160px;
   color: white;
   background-color: #1d2731;
-  line-height: 26px;
+  line-height: 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid rgba(29, 39, 49, 0.5);
-  -webkit-transition: background-color 1s ease, color 1s ease;
-  transition: background-color 1s ease, color 1s ease;
+  border: 1px solid #fff;
+  -webkit-transition: background-color 1s ease, color 1s ease, border-color 1s ease;
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease;
 }
 
 .hero .show-offer a:hover {
   color: #1d2731;
   background-color: white;
+  border-color: #1d2731;
 }
 
 @media (min-width: 768px) {
@@ -637,25 +655,161 @@ template {
   height: auto;
   margin-top: 1rem;
   margin-bottom: 60px;
-  padding: .5rem;
+  padding: 2rem 1rem;
+  background-color: rgba(4, 21, 73, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.contact__title {
-  margin: 0;
-  font-size: 2rem;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
-  color: black;
-  text-align: center;
+.contact--adress-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-.contact__content {
+.contact--adress-wrapper .contact__content {
   margin: 0;
   font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  color: black;
+  font-weight: 300;
+  color: #ffffff;
   margin-bottom: .5rem;
+}
+
+.contact--adress-wrapper .contact__content--company-name {
+  font-family: "Abhaya Libre", serif;
+  font-size: 1.2rem;
+  margin: .8rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contact--adress-wrapper .contact__content--cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+  width: 200px;
+  border: 1px solid #1d2731;
+  margin-top: .5rem;
+  background-color: #1d2731;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+.contact--adress-wrapper .contact__content--cta a {
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  -webkit-transition: background-color 1s ease, color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.contact--adress-wrapper .contact__content--cta:hover {
+  background-color: #ffffff;
+}
+
+.contact--adress-wrapper .contact__content--cta:hover a {
+  color: #1d2731;
+}
+
+.contact--footer-menu-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #fff;
+}
+
+.contact--footer-menu-wrapper .footer-menu {
+  margin-top: 1rem;
+}
+
+.contact--footer-menu-wrapper .footer-menu__list {
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact--footer-menu-wrapper .footer-menu__list-item {
+  width: 100px;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color 1s ease;
+  transition: border-color 1s ease;
+}
+
+.contact--footer-menu-wrapper .footer-menu__list-item:hover {
+  border-color: #ffffff;
+}
+
+.contact--footer-menu-wrapper .footer-menu__list-item a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 1024px) {

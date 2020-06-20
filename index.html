@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
+  <!-- <meta name="viewport" content="[…], expand-on-scroll={allow|no}, initial-containing-block={actual|min|max}, vh-unit={actual|min|max}"> -->
   <title>Wyjątkowe nieruchomości</title>
   <link rel="icon" type="image/png" href="./images/logos/favicon.png"/>
   <link rel="stylesheet" href="styles.css">
@@ -16,7 +17,7 @@
         <img class='logo__image' src="./images/logos/white_logo_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
       </a>
     </h1>
-    <nav class='menu'>
+    <nav aria-label='primary' class='menu'>
       <ul class="menu__list">
         <li class="menu__list-item to-section"><a href="#section-about">o nas</a></li>
         <li class="menu__list-item">
@@ -179,7 +180,37 @@
     </button>
   </section>
   <footer class='contact' id='section-contact'>
-    <h2 class='contact__title'>Kontakt</h2>
+    <!-- <h2 class='contact__title'>Kontakt</h2> -->
+    <div class='contact--adress-wrapper'>
+      <p class='contact__content--company-name'>Wyjątkowe nieruchomości</p>
+      <p class='contact__content'>ul. Nadwiślańska 11/197</p>
+      <p class='contact__content'>30-527 Kraków</p>
+      <div class='contact__content--cta'>
+        <a class='contact__content--cta-link' href='tel:733-003-652'>zadzwoń</a>
+      </div>
+      <div class='contact__content--cta'>
+        <a class='contact__content--cta-link' href='mailto: biuro@wyjatkowenieruchomosci.pl'>napisz</a>
+      </div>
+    </div>
+    <div class='contact--footer-menu-wrapper'>
+      <nav aria-label='secondary' class='footer-menu'>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__list-item to-section"><a href="#section-about">o nas</a></li>
+          <li class="footer-menu__list-item">
+            <a href="./krakow.html">kraków</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a href="./zakopane.html">zakopane</a>
+          </li><li class="footer-menu__list-item">
+            <a href="./condo.html">wakacje</a>
+          </li>
+          <li class="footer-menu__list-item to-section">
+            <a href="#section-contact">kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
   </footer>
 </body>
 </html>
