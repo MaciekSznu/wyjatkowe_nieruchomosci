@@ -140,6 +140,10 @@
       &-data--year {
         padding-right: 1rem;
       }
+
+      &-price p:first-of-type  {
+        margin: .5rem 0;
+      }
     }
 
     &__description {
