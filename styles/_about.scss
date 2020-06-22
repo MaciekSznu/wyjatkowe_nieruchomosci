@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $site-desc-bg-color;
+  // background-color: $site-desc-bg-color;
 
   &__title {
     width: 100%;
@@ -25,21 +25,31 @@
     background-color: $site-title-bg-color;
   }
 
-  &__content, &__list {
+  &__content-wrapper {
     width: 100%;
-    margin: 0;
-    padding: 0 1.5rem;
-    font-size: 1rem;
-    font-family: $text-font-family;
-    font-weight: 400;
-    color: black;
-    margin-bottom: .75rem;
-    line-height: 1.25;
+    background-color: $site-desc-bg-color;
+    padding-top: 1rem;
+
+    .about__content, .about__list {
+      width: 100%;
+      margin: 0;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      font-family: $text-font-family;
+      font-weight: 400;
+      color: black;
+      margin-bottom: .75rem;
+      line-height: 1.25;
+    }
+  
+    .about__list {
+      padding-left: 3rem;
+    }
+
+
   }
 
-  &__list {
-    padding-left: 3rem;
-  }
+  
 
   @media (min-width: 768px) {
     padding-bottom: 1.5rem;
@@ -51,15 +61,23 @@
       margin-bottom: 1.5rem;
     }
 
-    &__content, &__list {
-      font-size: 1.25rem;
-      padding: 0 3rem;
-      margin-bottom: 1rem;
+    &__content-wrapper {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      .about__content, .about__list {
+        font-size: 1.1rem;
+        padding: 0 3rem;
+        margin-bottom: 1rem;
+      }
+  
+      .about__list {
+        padding-left: 5rem;
+      }
+
     }
 
-    &__list {
-      padding-left: 5rem;
-    }
+    
   }
 
   @media (min-width: 1024px) {
@@ -67,11 +85,13 @@
     &__title {
       font-size: 2.25rem;
       margin-bottom: 2rem;
-
     }
 
-    &__content, &__list {
-      font-size: 1.25rem;
+    &__content-wrapper {
+
+      .about__content, .about__list {
+        font-size: 1.15rem;
+      }
     }
   }
 
@@ -81,12 +101,27 @@
       height: 100px;
       line-height: 100px;
       font-size: 3rem;
-      margin-bottom: 2rem;
-
+      margin-bottom: 1rem;
     }
 
-    &__content, &__list {
-      font-size: 1.25rem;
+    &__content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .about__content, .about__list {
+        width: 1280px;
+        font-size: 1.2rem;
+      }
+
+      .about__content {
+        padding: 0;
+      }
+
+      .about__list {
+        padding-left: 2rem;
+        padding-right: 0;
+      }
     }
   }
 
