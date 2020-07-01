@@ -3,6 +3,7 @@
 
 .hero {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 60px;
@@ -13,55 +14,121 @@
   background-position: center;
   background-size: cover;
 
-  &__title {
-    margin: 0;
-    font-size: 1.6rem;
-    font-family: $lead-font-family;
-    font-weight: 700;
-    color: white;
-    margin-top: 18%;
-    text-align: center;
+  @media (orientation: landscape) {
+    height: 100vh;
+    max-height: calc(100vh - #{$top-bar-height} * 2);
   }
 
-  .show-offer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    @include hero-show-offer-anchor;
-    margin-bottom: 10vw;
+  .search-wrapper {
+    @include flex-center-center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    padding: 1rem 0;
+    transform: translateX(-50%);
+    background-color: $search-form-bg-color;
+
+
+    .search-form {
+      @include flex-center-center;
+      flex-direction: column;
+      width: 100%;
+
+      .search-form-selects-wrapper {
+        @include flex-center-center;
+        flex-direction: column;
+
+        .search-form__property, .search-form__transaction, .search-form__localization {
+          font-family: $text-font-family;
+          width: 160px;
+          height: 1.5rem;
+          font-size: .8rem;
+          margin-bottom: .25rem;
+  
+          &--item {
+            text-align: center;
+          }
+        }
+      }
+
+      &__button {
+        font-family: $text-font-family;
+        width: 120px;
+        height: 1.5rem;
+        margin-top: .75rem;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (orientation: landscape) {
+      width: 100%;
+
+      .search-form {
+        .search-form-selects-wrapper {
+          flex-direction: row;
+
+          .search-form__property, .search-form__transaction, .search-form__localization {
+            margin: .5rem;
+          }
+        }
+
+      }
+    }
   }
 
   @media (min-width: 768px) {
     height: 50vh;
     max-height: 600px;
 
-    &__title {
-      font-size: 2.5rem;
+    .search-wrapper {
+      height: 20%;
+      background-color: $search-form-bg-color;
+
+      width: 100%;
+
+      .search-form {
+        .search-form-selects-wrapper {
+          flex-direction: row;
+
+          .search-form__property, .search-form__transaction, .search-form__localization {
+            width: 200px;
+            height: 2rem;
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+      &__button {
+        font-family: $text-font-family;
+        width: 160px;
+        height: 2rem;
+        margin-top: .75rem;
+        text-transform: uppercase;
+      }
     }
   }
 
   @media (min-width: 1024px) {
-    height: 70vh;
-    max-height: 700px;
+    height: calc(100vh - #{$top-bar-height});
+    max-height: 100vh;
     background-image: url('./images/heroes/krakow_01_1920_1306.jpg');
 
-    &__title {
-      font-size: 3.5rem;
+    .search-wrapper {
+      width: 80%;
+      max-width: 800px;
     }
   }
   
   @media (min-width: 1280px) {
-    height: 70vh;
-    max-height: 700px;
     background-image: url('./images/heroes/krakow_01_1920_1306.jpg');
 
-    &__title {
-      font-size: 3.5rem;
-      margin-top: 18%;
-    }
-
-    .show-offer {
-      margin-bottom: 8vw;
+    .search-wrapper {
+      bottom: 2rem;
+      width: 60%;
+      max-width: 800px;
+      max-height: 140px;
     }
   }
 }

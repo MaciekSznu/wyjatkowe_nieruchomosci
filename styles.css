@@ -346,7 +346,7 @@ template {
 .header {
   width: 100%;
   height: 60px;
-  background-color: #041549;
+  background-color: #36446d;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -357,7 +357,7 @@ template {
   height: 100%;
   max-height: 60px;
   margin: 0;
-  background-color: #041549;
+  background-color: #36446d;
 }
 
 .header .logo a {
@@ -385,7 +385,7 @@ template {
   top: 60px;
   height: calc(100vh - 2 * 60px);
   width: 100vw;
-  background-color: #041549;
+  background-color: #36446d;
   -webkit-transition: -webkit-transform 1s .2s ease-in-out;
   transition: -webkit-transform 1s .2s ease-in-out;
   transition: transform 1s .2s ease-in-out;
@@ -418,7 +418,7 @@ template {
   letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
 }
@@ -492,6 +492,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -507,50 +508,99 @@ template {
   background-size: cover;
 }
 
-.hero__title {
-  margin: 0;
-  font-size: 1.6rem;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
-  color: white;
-  margin-top: 18%;
-  text-align: center;
+@media (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    max-height: calc(100vh - 60px * 2);
+  }
 }
 
-.hero .show-offer {
-  width: 100%;
+.hero .search-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 10vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  padding: 1rem 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(4, 21, 73, 0.4);
 }
 
-.hero .show-offer a {
-  width: 50%;
-  height: 36px;
-  max-width: 160px;
-  color: white;
-  background-color: #1d2731;
-  line-height: 32px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
+.hero .search-wrapper .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
   font-family: "Source Sans Pro", sans-serif;
-  border: 1px solid #fff;
-  -webkit-transition: background-color 1s ease, color 1s ease, border-color 1s ease;
-  transition: background-color 1s ease, color 1s ease, border-color 1s ease;
+  width: 160px;
+  height: 1.5rem;
+  font-size: .8rem;
+  margin-bottom: .25rem;
 }
 
-.hero .show-offer a:hover {
-  color: #1d2731;
-  background-color: white;
-  border-color: #1d2731;
+.hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization--item {
+  text-align: center;
+}
+
+.hero .search-wrapper .search-form__button {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 120px;
+  height: 1.5rem;
+  margin-top: .75rem;
+  text-transform: uppercase;
+}
+
+@media (orientation: landscape) {
+  .hero .search-wrapper {
+    width: 100%;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
+    margin: .5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -558,34 +608,52 @@ template {
     height: 50vh;
     max-height: 600px;
   }
-  .hero__title {
-    font-size: 2.5rem;
+  .hero .search-wrapper {
+    height: 20%;
+    background-color: rgba(4, 21, 73, 0.4);
+    width: 100%;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
+    width: 200px;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .hero .search-wrapper__button {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 160px;
+    height: 2rem;
+    margin-top: .75rem;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 1024px) {
   .hero {
-    height: 70vh;
-    max-height: 700px;
+    height: calc(100vh - 60px);
+    max-height: 100vh;
     background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
   }
-  .hero__title {
-    font-size: 3.5rem;
+  .hero .search-wrapper {
+    width: 80%;
+    max-width: 800px;
   }
 }
 
 @media (min-width: 1280px) {
   .hero {
-    height: 70vh;
-    max-height: 700px;
     background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
   }
-  .hero__title {
-    font-size: 3.5rem;
-    margin-top: 18%;
-  }
-  .hero .show-offer {
-    margin-bottom: 8vw;
+  .hero .search-wrapper {
+    bottom: 2rem;
+    width: 60%;
+    max-width: 800px;
+    max-height: 140px;
   }
 }
 
@@ -619,7 +687,6 @@ template {
   color: black;
   text-align: center;
   margin-bottom: 1rem;
-  background-color: #dbe3fd;
 }
 
 .about__content-wrapper {
@@ -716,7 +783,7 @@ template {
   margin-top: 1rem;
   margin-bottom: 60px;
   padding: 2rem 1rem;
-  background-color: rgba(4, 21, 73, 0.8);
+  background-color: #36446d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,6 +974,12 @@ template {
   height: 180px;
 }
 
+@media (orientation: landscape) {
+  .social {
+    bottom: calc(50vh - 90px);
+  }
+}
+
 .social__facebook, .social__phone, .social__instagram {
   width: 48px;
   height: 48px;
@@ -919,12 +992,12 @@ template {
   height: 100%;
   background-repeat: no-repeat;
   opacity: .9;
-  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
-          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
-  -webkit-transition: -webkit-filter .5s .2s ease-in-out;
-  transition: -webkit-filter .5s .2s ease-in-out;
-  transition: filter .5s .2s ease-in-out;
-  transition: filter .5s .2s ease-in-out, -webkit-filter .5s .2s ease-in-out;
+  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+  -webkit-transition: -webkit-filter 1s .2s ease-in-out;
+  transition: -webkit-filter 1s .2s ease-in-out;
+  transition: filter 1s .2s ease-in-out;
+  transition: filter 1s .2s ease-in-out, -webkit-filter 1s .2s ease-in-out;
 }
 
 .social__facebook--link.filtered, .social__phone--link.filtered, .social__instagram--link.filtered {
@@ -958,16 +1031,16 @@ template {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #041549;
+  background-color: #36446d;
 }
 
 .menu__toggler .hamburger-menu {
   width: 30px;
   height: 30px;
-  background: #041549;
+  background: #36446d;
   border: none;
   padding: 0;
-  outline: #041549;
+  outline: #36446d;
   cursor: pointer;
   overflow: hidden;
 }
@@ -1166,8 +1239,8 @@ template {
   margin: .25rem;
   background-repeat: no-repeat;
   z-index: -1;
-  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
-          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-value {
@@ -1415,8 +1488,8 @@ template {
   width: 20px;
   margin: .25rem;
   background-repeat: no-repeat;
-  -webkit-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
-          filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--area .description-value, .investments__wrapper .investments__single-offer--description .additional-description--price .description-value {

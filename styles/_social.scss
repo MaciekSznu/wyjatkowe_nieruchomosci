@@ -14,6 +14,10 @@
   max-width: 60px;
   height: 180px;
 
+  @media (orientation: landscape) {
+    bottom: calc(50vh - 90px);
+  }
+
   &__facebook, &__phone, &__instagram {
     width: 48px;
     height: 48px;
@@ -26,7 +30,7 @@
       background-repeat: no-repeat;
       opacity: .9;
       filter: $icons-filter;
-      transition: filter .5s .2s ease-in-out;
+      transition: filter 1s .2s ease-in-out;
     }
 
     &--link.filtered {

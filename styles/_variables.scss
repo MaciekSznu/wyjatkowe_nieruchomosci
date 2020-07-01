@@ -4,15 +4,15 @@ $base-gold-color: #CD9B32;
 $light-gold-color: #E1B950;
 
 
-$header-bg-color: #041549;
+$header-bg-color: #36446d;
 $text-font-family: 'Source Sans Pro',sans-serif;
 $lead-font-family: 'Abhaya Libre', serif;
 
-$mobile-menu-font-size: 2rem;
+$mobile-menu-font-size: 1.5rem;
 $mobile-menu-font-family: 'Source Sans Pro',sans-serif;
 $mobile-menu-font-weight: 600;
 $mobile-menu-font-color: #ffffff;
-$mobile-menu-bg-color: #041549;
+$mobile-menu-bg-color: #36446d;
 
 $top-bar-height: 60px;
 
@@ -24,7 +24,7 @@ $desktop-menu-font-color: rgba(#ffffff, .8);
 
 
 
-$icons-filter: invert(14%) sepia(13%) saturate(5989%) hue-rotate(203deg) brightness(86%) contrast(115%);
+$icons-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
 $active-menu-icons-filter: invert(93%) sepia(44%) saturate(7%) hue-rotate(128deg) brightness(105%) contrast(102%);
 
 $new-offer-font-color:  #1d2731;
@@ -50,7 +50,7 @@ $single-offer-title-font-color: #0a1612;
 $single-offer-subtitle-font-color: #1a2930;
 $single-offer-text-font-color: #1d2731;
 
-$mobile-contact-bg-color: rgba(#041549, .8);
+$mobile-contact-bg-color: #36446d;
 $contact-font-color: #ffffff;
 $contact-cta-border-color: #ffffff;
 $contact-cta-bg-color: #1d2731;
@@ -59,6 +59,8 @@ $footer-mobile-menu-font-size: 1rem;
 $footer-mobile-menu-font-family: 'Source Sans Pro',sans-serif;
 $footer-mobile-menu-font-weight: 300;
 $footer-mobile-menu-font-color: #ffffff;
+
+$search-form-bg-color: rgba(#041549, .4);
 
 
 
