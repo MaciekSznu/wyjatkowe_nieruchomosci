@@ -74,9 +74,9 @@
           color: $base-gold-color;
         }
 
-        &:hover .contact__content--cta-link .contact-icon {
-          filter: $contact-icon-hover-filter;
-        }
+        // &:hover .contact__content--cta-link .contact-icon {
+        //   filter: $contact-icon-hover-filter;
+        // }
 
 
       }
@@ -102,6 +102,7 @@
 
     .footer-menu {
       margin-top: .75rem;
+      margin-bottom: 1rem;
 
       &__list {
         width: 100%;
@@ -128,6 +129,60 @@
             font-weight: $footer-mobile-menu-font-weight;
           }
         }
+      }
+    }
+  }
+
+  &--form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 1px solid #fff;
+
+    .contact-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 1rem;
+      z-index: 11;
+
+      &--input-name,  &--input-email,  &--input-phone,  &--input-message,  &--input-submit {
+        width: 100%;
+        margin-top: .5rem;
+        padding: .4rem;
+        background-color: $mobile-contact-bg-color;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        color: $contact-font-color;
+        font-family: $text-font-family;
+        font-size: .9rem;
+
+        &:focus {
+          outline:none;
+        }
+      }
+
+      &--input-name::placeholder,  &--input-email::placeholder,  &--input-phone::placeholder,  &--input-message::placeholder {
+        color: $contact-font-color;
+        font-family: $text-font-family;
+        font-size: .8rem;
+      }
+
+      &--input-message {
+        height: 100px;
+        resize: none;
+
+        &::placeholder {
+          transform: translateY(72px);
+        }
+      }
+
+      &--input-submit {
+        margin-top: 1rem;
+        border: 1px solid #ffffff;
+        height: 2rem;
       }
     }
   }
