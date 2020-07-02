@@ -18,7 +18,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1rem;
-    border: 2px solid rgba($new-offer-font-color, .5);
+    border: 2px solid rgba($new-offer-font-color, 0.5);
     transition: background-color 1s ease, color 1s ease;
 
     &:hover {
@@ -66,5 +66,60 @@
     letter-spacing: 1px;
     font-size: 1rem;
     transition: background-color 1s ease, color 1s ease;
+  }
+}
+
+@mixin select-item {
+  
+    position: relative;
+    display: inline-block;
+    margin-bottom: .5rem;
+    width: 100%;
+
+   select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding-left: .6rem;
+    outline: 0;
+    border: 1px solid #36446d;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #36446d;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+   select::-ms-expand {
+    display: none;
+  }
+   select:hover,
+   select:focus {
+    color: #ffffff;
+    background: #36446d;
+  }
+   select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .select-arrow {
+    position: absolute;
+    top: 7px;
+    right: .6rem;
+    width: 6px;
+    height: 6px;
+    border: solid #36446d;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+   select:hover ~ .select-arrow,
+   select:focus ~ .select-arrow {
+    border-color: #ffffff;
+  }
+   select:disabled ~ .select-arrow {
+    border-top-color: #cccccc;
   }
 }

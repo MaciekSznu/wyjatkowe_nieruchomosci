@@ -447,9 +447,13 @@ template {
     top: initial;
     width: 90%;
     height: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .header .menu__list {
     width: 100%;
+    max-width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -532,7 +536,7 @@ template {
   padding: 1rem 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: rgba(4, 21, 73, 0.4);
+  background-color: rgba(4, 21, 73, 0.5);
 }
 
 .hero .search-wrapper .search-form {
@@ -568,24 +572,97 @@ template {
           flex-direction: column;
 }
 
-.hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
-  font-family: "Source Sans Pro", sans-serif;
-  width: 160px;
-  height: 1.5rem;
-  font-size: .8rem;
-  margin-bottom: .25rem;
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .5rem;
+  width: 100%;
 }
 
-.hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization--item {
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding-left: .6rem;
+  outline: 0;
+  border: 1px solid #36446d;
+  border-radius: 0px;
+  background: #ffffff;
+  color: #36446d;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
+  display: none;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
+  color: #ffffff;
+  background: #36446d;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  position: absolute;
+  top: 7px;
+  right: .6rem;
+  width: 6px;
+  height: 6px;
+  border: solid #36446d;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
+  border-color: #ffffff;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
+  border-top-color: #cccccc;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 170px;
+  height: 1.5rem;
+  font-size: .8rem;
+}
+
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization--item {
   text-align: center;
 }
 
 .hero .search-wrapper .search-form__button {
   font-family: "Source Sans Pro", sans-serif;
+  font-size: .9rem;
   width: 120px;
-  height: 1.5rem;
+  height: 1.75rem;
   margin-top: .75rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
+  background-color: #041549;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease, color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.hero .search-wrapper .search-form__button:hover {
+  color: #041549;
+  background-color: white;
 }
 
 @media (orientation: landscape) {
@@ -598,7 +675,11 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+    top: 15px;
+    right: 1rem;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
     margin: .5rem;
   }
 }
@@ -610,7 +691,6 @@ template {
   }
   .hero .search-wrapper {
     height: 20%;
-    background-color: rgba(4, 21, 73, 0.4);
     width: 100%;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper {
@@ -619,16 +699,21 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .search-form__localization {
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+    top: 19px;
+    right: 1.2rem;
+  }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
     width: 200px;
     height: 2rem;
     font-size: 1rem;
+    margin: .5rem;
   }
-  .hero .search-wrapper__button {
+  .hero .search-wrapper .search-form__button {
     font-family: "Source Sans Pro", sans-serif;
     width: 160px;
-    height: 2rem;
-    margin-top: .75rem;
+    height: 1.75rem;
+    margin-top: .25rem;
     text-transform: uppercase;
   }
 }
@@ -652,8 +737,11 @@ template {
   .hero .search-wrapper {
     bottom: 2rem;
     width: 60%;
-    max-width: 800px;
     max-height: 140px;
+  }
+  .hero .search-wrapper .search-form__button {
+    height: 2rem;
+    margin-top: .5rem;
   }
 }
 

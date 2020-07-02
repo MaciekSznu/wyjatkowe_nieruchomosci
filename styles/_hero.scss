@@ -39,25 +39,42 @@
         @include flex-center-center;
         flex-direction: column;
 
-        .search-form__property, .search-form__transaction, .search-form__localization {
-          font-family: $text-font-family;
-          width: 160px;
-          height: 1.5rem;
-          font-size: .8rem;
-          margin-bottom: .25rem;
-  
-          &--item {
-            text-align: center;
+        .single-select-wrapper {
+          @include select-item;
+
+          .search-form__property, .search-form__transaction, .search-form__localization {
+            font-family: $text-font-family;
+            width: 170px;
+            height: 1.5rem;
+            font-size: .8rem;
+
+            &--item {
+              text-align: center;
+            }
           }
         }
+        
       }
 
       &__button {
         font-family: $text-font-family;
+        font-size: .9rem;
         width: 120px;
-        height: 1.5rem;
+        height: 1.75rem;
         margin-top: .75rem;
+        letter-spacing: .1rem;
         text-transform: uppercase;
+        background-color: $search-form-btn-bg-color;
+        border: 1px solid #ffffff;
+        border-radius: 0;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 1s ease, color 1s ease;
+
+        &:hover {
+          color: $search-form-btn-bg-color;
+          background-color: white;
+        }
       }
     }
 
@@ -68,8 +85,16 @@
         .search-form-selects-wrapper {
           flex-direction: row;
 
-          .search-form__property, .search-form__transaction, .search-form__localization {
-            margin: .5rem;
+          .single-select-wrapper {
+
+            .select-arrow {
+              top: 15px;
+              right: 1rem;
+            }
+
+            .search-form__property, .search-form__transaction, .search-form__localization {
+              margin: .5rem;
+            }
           }
         }
 
@@ -83,29 +108,35 @@
 
     .search-wrapper {
       height: 20%;
-      background-color: $search-form-bg-color;
-
       width: 100%;
 
       .search-form {
         .search-form-selects-wrapper {
           flex-direction: row;
 
-          .search-form__property, .search-form__transaction, .search-form__localization {
-            width: 200px;
-            height: 2rem;
-            font-size: 1rem;
+          .single-select-wrapper {
+
+            .select-arrow {
+              top: 19px;
+              right: 1.2rem;
+            }
+
+            .search-form__property, .search-form__transaction, .search-form__localization {
+              width: 200px;
+              height: 2rem;
+              font-size: 1rem;
+              margin: .5rem;
+            }
           }
         }
 
-      }
-
-      &__button {
-        font-family: $text-font-family;
-        width: 160px;
-        height: 2rem;
-        margin-top: .75rem;
-        text-transform: uppercase;
+        &__button {
+          font-family: $text-font-family;
+          width: 160px;
+          height: 1.75rem;
+          margin-top: .25rem;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -127,8 +158,12 @@
     .search-wrapper {
       bottom: 2rem;
       width: 60%;
-      max-width: 800px;
       max-height: 140px;
+
+      .search-form__button {
+        height: 2rem;
+        margin-top: .5rem;
+      }
     }
   }
 }

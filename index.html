@@ -14,7 +14,7 @@
   <header class='header'>
     <h1 class='logo'>
       <a href="./index.html">
-        <img class='logo__image' src="./images/logos/white_logo_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
+        <img class='logo__image' src="./images/logos/white_logo_pl_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
       </a>
     </h1>
     <nav aria-label='primary' class='menu'>
@@ -42,27 +42,36 @@
     <div class='search-wrapper'>
       <form class='search-form' action="">
         <div class='search-form-selects-wrapper'>
-          <select class='search-form__property' name="property" id="property">
-            <option class='search-form__property--item' value='wszystkie'>wszystkie oferty</option>
-            <option class='search-form__property--item' value='domy'>domy</option>
-            <option class='search-form__property--item' value='mieszkania'>mieszkania</option>
-            <option class='search-form__property--item' value='dzialki'>działki</option>
-            <option class='search-form__property--item' value='lokale'>lokale</option>
-            <option class='search-form__property--item' value='apartamenty'>apartamenty wakacyjne</option>
-          </select>
-          <select class='search-form__transaction' name="transaction" id="transaction">
-            <option class='search-form__transaction--item' value='wszystkie'>wszystkie transakcje</option>
-            <option class='search-form__transaction--item' value='sprzedaż'>sprzedaż</option>
-            <option class='search-form__transaction--item' value='wynajem'>wynajem</option>
-          </select>
-          <select class='search-form__localization' name="localization" id="localization">
-            <option class='search-form__localization--item' value='wszystkie'>wszystkie lokalizacje</option>
-            <option class='search-form__localization--item' value='kraków'>kraków</option>
-            <option class='search-form__localization--item' value='zakopane'>zakopane</option>
-            <option class='search-form__localization--item' value='niedzica'>niedzica</option>
-            <option class='search-form__localization--item' value='kolobrzeg'>kołobrzeg</option>
-            <option class='search-form__localization--item' value='gdansk'>gdańsk</option>
-          </select>
+          <div class='single-select-wrapper'>
+            <select class='search-form__property' name="property" id="property">
+              <option class='search-form__property--item' value='wszystkie'>wszystkie oferty</option>
+              <option class='search-form__property--item' value='domy'>domy</option>
+              <option class='search-form__property--item' value='mieszkania'>mieszkania</option>
+              <option class='search-form__property--item' value='dzialki'>działki</option>
+              <option class='search-form__property--item' value='lokale'>lokale</option>
+              <option class='search-form__property--item' value='apartamenty'>apartamenty wakacyjne</option>
+            </select>
+            <div class='select-arrow'></div>
+          </div>
+          <div class='single-select-wrapper'>
+            <select class='search-form__transaction' name="transaction" id="transaction">
+              <option class='search-form__transaction--item' value='wszystkie'>wszystkie transakcje</option>
+              <option class='search-form__transaction--item' value='sprzedaż'>sprzedaż</option>
+              <option class='search-form__transaction--item' value='wynajem'>wynajem</option>
+            </select>
+          <div class='select-arrow'></div>
+          </div>
+          <div class='single-select-wrapper'>
+            <select class='search-form__localization' name="localization" id="localization">
+              <option class='search-form__localization--item' value='wszystkie'>wszystkie lokalizacje</option>
+              <option class='search-form__localization--item' value='kraków'>kraków</option>
+              <option class='search-form__localization--item' value='zakopane'>zakopane</option>
+              <option class='search-form__localization--item' value='niedzica'>niedzica</option>
+              <option class='search-form__localization--item' value='kolobrzeg'>kołobrzeg</option>
+              <option class='search-form__localization--item' value='gdansk'>gdańsk</option>
+            </select>
+            <div class='select-arrow'></div>
+          </div>
         </div>
         <input class='search-form__button' type='submit' value='szukaj'>
       </form>
@@ -212,7 +221,7 @@
   <footer class='contact' id='section-contact'>
     <div class='contact--adress-wrapper'>
       <div class='contact__content-logo'>
-        <img class='logo__image' src="./images/logos/white_logo_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
+        <img class='logo__image' src="./images/logos/white_logo_pl_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
       </div>
       <div class='contact__content--cta'>
         <a class='contact__content--cta-link' href='tel:733-003-652'>733-003-652</a>
