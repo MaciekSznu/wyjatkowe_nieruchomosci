@@ -28,46 +28,46 @@
   }
 }
 
-@mixin hero-show-offer-anchor {
-  a {
-    width: 50%;
-    height: 36px;
-    max-width: 160px;
-    color: white;
-    background-color: $new-offer-font-color;
-    line-height: 32px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-    font-family: $text-font-family;
-    border: 1px solid #fff;
-    transition: background-color 1s ease, color 1s ease, border-color 1s ease;
+// @mixin hero-show-offer-anchor {
+//   a {
+//     width: 50%;
+//     height: 36px;
+//     max-width: 160px;
+//     color: white;
+//     background-color: $new-offer-font-color;
+//     line-height: 32px;
+//     text-align: center;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     letter-spacing: 1px;
+//     font-size: 1.1rem;
+//     font-family: $text-font-family;
+//     border: 1px solid #fff;
+//     transition: background-color 1s ease, color 1s ease, border-color 1s ease;
 
-    &:hover {
-      color: $new-offer-font-color;
-      background-color: white;
-      border-color: $new-offer-font-color;
-    }
-  }
-}
+//     &:hover {
+//       color: $new-offer-font-color;
+//       background-color: white;
+//       border-color: $new-offer-font-color;
+//     }
+//   }
+// }
 
-@mixin contact-anchor {
-  a {
-    width: 100%;
-    font-family: $text-font-family;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    transition: background-color 1s ease, color 1s ease;
-  }
-}
+// @mixin contact-anchor {
+//   a {
+//     width: 100%;
+//     font-family: $text-font-family;
+//     color: white;
+//     text-align: center;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     font-weight: 400;
+//     letter-spacing: 1px;
+//     font-size: 1rem;
+//     transition: background-color 1s ease, color 1s ease;
+//   }
+// }
 
 @mixin select-item {
   

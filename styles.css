@@ -922,6 +922,18 @@ template {
   margin: .25rem 0;
 }
 
+.contact--adress-wrapper .contact__content .contact-icon {
+  height: 1rem;
+  -webkit-filter: invert(90%) sepia(65%) saturate(8%) hue-rotate(185deg) brightness(104%) contrast(100%);
+          filter: invert(90%) sepia(65%) saturate(8%) hue-rotate(185deg) brightness(104%) contrast(100%);
+  width: auto;
+  margin-right: .5rem;
+}
+
+.contact--adress-wrapper .contact__content:nth-of-type(2) {
+  margin-left: 20px;
+}
+
 .contact--adress-wrapper .contact__content--cta {
   height: auto;
   width: 100%;
@@ -934,10 +946,29 @@ template {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact--adress-wrapper .contact__content--cta-link .contact-icon {
+  height: 1rem;
+  -webkit-filter: invert(90%) sepia(65%) saturate(8%) hue-rotate(185deg) brightness(104%) contrast(100%);
+          filter: invert(90%) sepia(65%) saturate(8%) hue-rotate(185deg) brightness(104%) contrast(100%);
+  width: auto;
+  margin-right: .5rem;
 }
 
 .contact--adress-wrapper .contact__content--cta:hover .contact__content--cta-link {
   color: #CD9B32;
+}
+
+.contact--adress-wrapper .contact__content--cta:hover .contact__content--cta-link .contact-icon {
+  -webkit-filter: invert(83%) sepia(16%) saturate(2691%) hue-rotate(339deg) brightness(88%) contrast(79%);
+          filter: invert(83%) sepia(16%) saturate(2691%) hue-rotate(339deg) brightness(88%) contrast(79%);
 }
 
 .contact--footer-menu-wrapper {
@@ -1080,8 +1111,8 @@ template {
   height: 100%;
   background-repeat: no-repeat;
   opacity: .9;
-  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
-          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+  -webkit-filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
+          filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
   -webkit-transition: -webkit-filter 1s .2s ease-in-out;
   transition: -webkit-filter 1s .2s ease-in-out;
   transition: filter 1s .2s ease-in-out;
@@ -1327,8 +1358,8 @@ template {
   margin: .25rem;
   background-repeat: no-repeat;
   z-index: -1;
-  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
-          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+  -webkit-filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
+          filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-value {
@@ -1576,8 +1607,8 @@ template {
   width: 20px;
   margin: .25rem;
   background-repeat: no-repeat;
-  -webkit-filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
-          filter: invert(24%) sepia(6%) saturate(5229%) hue-rotate(188deg) brightness(91%) contrast(84%);
+  -webkit-filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
+          filter: invert(21%) sepia(6%) saturate(7309%) hue-rotate(189deg) brightness(92%) contrast(77%);
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--area .description-value, .investments__wrapper .investments__single-offer--description .additional-description--price .description-value {
