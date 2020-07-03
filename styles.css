@@ -493,23 +493,33 @@ template {
 }
 
 .hero {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 60px;
+  padding-top: 60px;
   width: 100%;
-  height: 80vw;
+  height: calc(80vw + 60px);
   max-height: 600px;
   background-image: url("./images/heroes/krakow_01_1024_697.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.hero__title {
+  font-size: 1.6rem;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
 }
 
 @media (orientation: landscape) {
@@ -690,6 +700,9 @@ template {
     height: 50vh;
     max-height: 600px;
   }
+  .hero__title {
+    font-size: 2.5rem;
+  }
   .hero .search-wrapper {
     height: 20%;
     width: 100%;
@@ -721,9 +734,13 @@ template {
 
 @media (min-width: 1024px) {
   .hero {
-    height: calc(100vh - 60px);
+    margin-top: 0;
+    height: 100vh;
     max-height: 100vh;
     background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
+  }
+  .hero__title {
+    font-size: 3.5rem;
   }
   .hero .search-wrapper {
     width: 80%;
@@ -732,8 +749,8 @@ template {
 }
 
 @media (min-width: 1280px) {
-  .hero {
-    background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
+  .hero__title {
+    font-size: 3.5rem;
   }
   .hero .search-wrapper {
     bottom: 2rem;
@@ -955,6 +972,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact--adress-wrapper .contact__content--cta-link .contact-icon {
@@ -1078,11 +1097,29 @@ template {
   outline: none;
 }
 
+.contact--form-wrapper .contact-form--input-name:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover::-webkit-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact--form-wrapper .contact-form--input-name:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover:-ms-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact--form-wrapper .contact-form--input-name:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover::-ms-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact--form-wrapper .contact-form--input-name:hover::placeholder, .contact--form-wrapper .contact-form--input-email:hover::placeholder, .contact--form-wrapper .contact-form--input-phone:hover::placeholder, .contact--form-wrapper .contact-form--input-message:hover::placeholder {
+  color: #CD9B32;
+}
+
 .contact--form-wrapper .contact-form--input-name::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-email::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-message::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: .8rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact--form-wrapper .contact-form--input-name:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:-ms-input-placeholder {
@@ -1090,6 +1127,8 @@ template {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: .8rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact--form-wrapper .contact-form--input-name::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message::-ms-input-placeholder {
@@ -1097,6 +1136,8 @@ template {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: .8rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact--form-wrapper .contact-form--input-name::placeholder, .contact--form-wrapper .contact-form--input-email::placeholder, .contact--form-wrapper .contact-form--input-phone::placeholder, .contact--form-wrapper .contact-form--input-message::placeholder {
@@ -1104,6 +1145,8 @@ template {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: .8rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 .contact--form-wrapper .contact-form--input-message {
@@ -1132,7 +1175,17 @@ template {
 .contact--form-wrapper .contact-form--input-submit {
   margin-top: 1rem;
   border: 1px solid #ffffff;
-  height: 2rem;
+  height: 2.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease, color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.contact--form-wrapper .contact-form--input-submit:hover {
+  color: #36446d;
+  background-color: white;
 }
 
 @media (min-width: 568px) {
@@ -1710,7 +1763,7 @@ template {
   border-bottom: 1px solid rgba(29, 39, 49, 0.5);
 }
 
-.investments__wrapper .investments__single-offer--description .main-description--city, .investments__wrapper .investments__single-offer--description .main-description--price {
+.investments__wrapper .investments__single-offer--description .main-description--city, .investments__wrapper .investments__single-offer--description .main-description--street {
   margin: .75rem 0;
 }
 
@@ -2128,5 +2181,11 @@ template {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+.filler {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */

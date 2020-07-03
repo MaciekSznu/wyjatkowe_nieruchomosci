@@ -18,14 +18,14 @@
     </h1>
     <nav aria-label='primary' class='menu'>
       <ul class="menu__list">
-        <li class="menu__list-item"><a href="./index.html">o nas</a></li>
+        <li class="menu__list-item"><a href="./index.html">home</a></li>
         <li class="menu__list-item">
-          <a href="./krakow.html">kraków</a>
+          <a href="./oferty.html">oferty</a>
         </li>
         <li class="menu__list-item">
-          <a href="./zakopane.html">zakopane</a>
+          <a href="./uslugi.html">usługi</a>
         </li><li class="menu__list-item">
-          <a href="./condo.html">wakacje</a>
+          <a href="./o-nas.html">o nas</a>
         </li>
         <li class="menu__list-item to-section">
           <a href="#section-contact">kontakt</a>
@@ -34,9 +34,23 @@
     </nav>
   </header>
   <section class='hero'>
-    <h2 class='hero__title'>Kraków</h2>
+    <h2 class='hero__title'>O NAS</h2>
   </section>
-  <section class='investments'>
+  <section class='about'>
+    <h2 class='about__title'>O nas</h2>
+    <div class='about__content-wrapper'>
+    <p class='about__content'>Nasza specjalność to sprzedaż nieruchomości mieszkalnych położonych w Krakowie i Zakopanym, a także apartamentów wakacyjnych zlokalizowanych w najbardziej atrakcyjnych polskich kurortach.</p>
+      <p class='about__content'>Profesjonalnie doradzamy m.in. w zakresie:</p>
+      <ul class='about__list'>
+        <li class='about__list--item'>zakupu i sprzedaży nieruchomości mieszkalnych oraz inwestycyjnych,</li>
+        <li class='about__list--item'>zakupu i sprzedaży gruntów oraz inwestycji deweloperskich,</li>
+        <li class='about__list--item'>marketingu inwestycji deweloperskich.</li>
+      </ul>
+      <p class='about__content'>Cel naszych działań to wygodna dla Ciebie, szybka sprzedaż nieruchomości w maksymalnej cenie. Osiągamy to poprzez bycie bezpośrednim, uczciwym i przyjaznym. Jesteśmy po to, aby zapewnić Ci najlepszą obsługę oraz pomoc i poprowadzić Cię poprzez całą transakcję, oferując profesjonalne doradztwo na każdym etapie.</p>
+      <p class='about__content'>Wieloletnie doświadczenie oraz wiedza rynkowa zapewnią Ci komfort i swobodę, pozostawiając wykonanie zadania w naszych rękach, niezależnie od tego, czy kupujesz czy sprzedajesz nieruchomość.</p>
+    </div>
+  </section>
+  <!-- <section class='investments'>
     <h2 class='investments__title'>Apartamenty Wakacyjne</h2>
     <div class='investments__wrapper'>
       <div class='investments__single-offer'>
@@ -118,7 +132,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class='social'>
     <div class='social__facebook'>
       <a class='social__facebook--link' href='https://www.facebook.com/michal.bysiek' target='_blank' rel='noopener noreferrer'></a>
@@ -141,26 +155,35 @@
         <img class='logo__image' src="./images/logos/white_logo_pl_500_140.svg" alt="Logo Wyjątkowe Nieruchomości">
       </div>
       <div class='contact__content--cta'>
-        <a class='contact__content--cta-link' href='tel:733-003-652'>733-003-652</a>
+        <a class='contact__content--cta-link' href='tel:733-003-652'>
+          <img class='contact-icon' src="./images/logos/phone-square.svg" alt="Zadzwoń do nas">
+          733-003-652
+        </a>
       </div>
       <div class='contact__content--cta'>
-        <a class='contact__content--cta-link' href='mailto: biuro@wyjatkowenieruchomosci.pl'>biuro@wyjatkowenieruchomosci.pl</a>
+        <a class='contact__content--cta-link' href='mailto: biuro@wyjatkowenieruchomosci.pl'>
+          <img class='contact-icon' src="./images/icons/envelope-square.svg" alt="Wyślij email">
+          biuro@wyjatkowenieruchomosci.pl
+        </a>
       </div>
-      <p class='contact__content'>ul. Nadwiślańska 11/197</p>
+      <p class='contact__content'>
+        <img class='contact-icon' src="./images/icons/map-marker-alt.svg" alt="Wyślij email">
+        ul. Nadwiślańska 11/197
+      </p>
       <p class='contact__content'>30-527 Kraków</p>
     </div>
     <div class='contact--footer-menu-wrapper'>
       <p class='footer-menu-title'>menu</p>
       <nav aria-label='secondary' class='footer-menu'>
         <ul class="footer-menu__list">
-          <li class="footer-menu__list-item to-section"><a href="#section-about">o nas</a></li>
+          <li class="footer-menu__list-item"><a href="./index.html">home</a></li>
           <li class="footer-menu__list-item">
-            <a href="./krakow.html">kraków</a>
+            <a href="./oferty.html">oferty</a>
           </li>
           <li class="footer-menu__list-item">
-            <a href="./zakopane.html">zakopane</a>
+            <a href="./uslugi.html">usługi</a>
           </li><li class="footer-menu__list-item">
-            <a href="./condo.html">wakacje</a>
+            <a href="./o-nas.html">o nas</a>
           </li>
           <li class="footer-menu__list-item to-section">
             <a href="#section-contact">kontakt</a>
@@ -168,6 +191,14 @@
         </ul>
       </nav>
     </div>
+    <div class='contact--form-wrapper'>
+      <form class='contact-form'>
+        <input class='contact-form--input-name' type="text" name="imie" aria-required="true" aria-invalid="false" placeholder="Twoje Imię (wymagane)">
+        <input class='contact-form--input-email' type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Twój E-mail (wymagane)">
+        <input class='contact-form--input-phone' type="tel" name="telefon" aria-required="true" aria-invalid="false" placeholder="Twój Telefon (wymagane)">
+        <textarea class='contact-form--input-message' type="text" name="message" aria-invalid="false" placeholder="Twoja wiadomość"></textarea>
+        <input class='contact-form--input-submit' type="submit" value="Wyślij wiadomość">
+      </form>
     </div>
   </footer>
 </body>
