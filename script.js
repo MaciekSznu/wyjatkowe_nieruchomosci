@@ -13,11 +13,11 @@ const click = (target, callback) => {
   });
 };
 
-const socialAsideButtons = document.querySelectorAll('a[class^="social"][class$="link"]');
+// const socialAsideButtons = document.querySelectorAll('a[class^="social"][class$="link"]');
 
-const changeSocialColors = () => socialAsideButtons.forEach((item) => {
-  item.classList.toggle('filtered');
-});
+// const changeSocialColors = () => socialAsideButtons.forEach((item) => {
+//   item.classList.toggle('filtered');
+// });
 
 const hamburgerButton = document.querySelector('.hamburger-menu');
 const mobileMenu = document.querySelector('.menu');
@@ -34,7 +34,7 @@ const hamburgerActive = () => {
 hamburgerButton.addEventListener('click', (e) => {
   showMobileMenu();
   hamburgerActive();
-  changeSocialColors();
+  // changeSocialColors();
 });
 
 const mobileMenuItems = document.querySelectorAll('.menu__list-item:not(.to-section) a');
@@ -56,7 +56,7 @@ mobileMenuItemsScroll.forEach((item, index) => {
     if ( width < 1024 ) {
       showMobileMenu();
       hamburgerActive();
-      changeSocialColors();
+      // changeSocialColors();
     }
   })
 });
@@ -67,7 +67,7 @@ mobileMenuItems.forEach((item) => {
     if ( width < 1024 ) {
       showMobileMenu();
       hamburgerActive();
-      changeSocialColors();
+      // changeSocialColors();
     }
   })
 });

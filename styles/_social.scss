@@ -29,12 +29,7 @@
       height: 100%;
       background-repeat: no-repeat;
       opacity: .9;
-      filter: $icons-filter;
-      transition: filter 1s .2s ease-in-out;
-    }
-
-    &--link.filtered {
-      filter: $active-menu-icons-filter;
+      transition: fill 1s .2s ease-in-out;
     }
   }
 
