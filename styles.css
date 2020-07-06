@@ -5,8 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -346,7 +345,7 @@ template {
 .header {
   width: 100%;
   height: 60px;
-  background-color: #36446d;
+  background-color: #002349;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -357,7 +356,7 @@ template {
   height: 100%;
   max-height: 60px;
   margin: 0;
-  background-color: #36446d;
+  background-color: #002349;
 }
 
 .header .logo a {
@@ -385,7 +384,7 @@ template {
   top: 60px;
   height: calc(100vh - 2 * 60px);
   width: 100vw;
-  background-color: #36446d;
+  background-color: #002349;
   -webkit-transition: -webkit-transform 1s .2s ease-in-out;
   transition: -webkit-transform 1s .2s ease-in-out;
   transition: transform 1s .2s ease-in-out;
@@ -419,7 +418,7 @@ template {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
@@ -430,16 +429,26 @@ template {
 
 @media (min-width: 1024px) {
   .header {
+    height: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header .logo {
-    max-width: 190px;
+    max-height: 80px;
+    max-width: 270px;
     margin: 0 2rem;
+  }
+  .header .logo a {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .header .menu {
     position: relative;
@@ -479,8 +488,8 @@ template {
   }
   .header .menu__list-item a {
     letter-spacing: 1px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
   }
@@ -507,6 +516,7 @@ template {
   margin-top: 60px;
   padding-top: 60px;
   width: 100%;
+  max-width: 100vw;
   height: calc(80vw + 60px);
   max-height: 600px;
   background-image: url("./images/heroes/krakow_01_1024_697.jpg");
@@ -516,7 +526,7 @@ template {
 
 .hero__title {
   font-size: 1.6rem;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: white;
   text-align: center;
@@ -542,11 +552,10 @@ template {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 80%;
+  width: 100%;
   padding: 1rem 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: rgba(54, 68, 109, 0.5);
 }
 
 .hero .search-wrapper .search-form {
@@ -593,15 +602,15 @@ template {
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  padding-left: .6rem;
+  padding-left: .9rem;
   outline: 0;
-  border: 1px solid #36446d;
+  border: none;
   border-radius: 0px;
   background: #ffffff;
   color: #36446d;
-  appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
@@ -622,8 +631,8 @@ template {
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
   position: absolute;
   cursor: pointer;
-  top: 7px;
-  right: .6rem;
+  top: 15px;
+  right: .9rem;
   width: 6px;
   height: 6px;
   border: solid #36446d;
@@ -643,37 +652,42 @@ template {
   border-top-color: #cccccc;
 }
 
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
-  font-family: "Source Sans Pro", sans-serif;
-  width: 170px;
-  height: 1.5rem;
-  font-size: .8rem;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction--item, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization--item {
-  text-align: center;
+.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 2.5rem;
+  font-size: .9rem;
+  border-radius: 1.25rem;
 }
 
 .hero .search-wrapper .search-form__button {
-  font-family: "Source Sans Pro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
   font-size: .9rem;
-  width: 120px;
-  height: 1.75rem;
+  font-weight: 500;
+  width: 180px;
+  height: 2.5rem;
   margin-top: .75rem;
   letter-spacing: .1rem;
   text-transform: uppercase;
-  background-color: #36446d;
-  border: 1px solid #ffffff;
-  border-radius: 0;
-  color: #ffffff;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 1.25rem;
+  color: #36446d;
   cursor: pointer;
-  -webkit-transition: background-color 1s ease, color 1s ease;
-  transition: background-color 1s ease, color 1s ease;
 }
 
-.hero .search-wrapper .search-form__button:hover {
-  color: #36446d;
-  background-color: white;
+.hero .search-wrapper .search-form__button--icon {
+  height: 40%;
+  margin-right: 1rem;
 }
 
 @media (orientation: landscape) {
@@ -687,10 +701,10 @@ template {
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
-    top: 15px;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.4rem;
   }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     margin: .5rem;
   }
 }
@@ -707,44 +721,63 @@ template {
     height: 20%;
     width: 100%;
   }
+  .hero .search-wrapper .search-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .hero .search-wrapper .search-form .search-form-selects-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+    margin: 0;
+  }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
     top: 19px;
     right: 1.2rem;
   }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__localization {
-    width: 200px;
+  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     height: 2rem;
-    font-size: 1rem;
     margin: .5rem;
   }
   .hero .search-wrapper .search-form__button {
-    font-family: "Source Sans Pro", sans-serif;
-    width: 160px;
-    height: 1.75rem;
-    margin-top: .25rem;
-    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    height: 2rem;
+    margin: .5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero {
     margin-top: 0;
+    padding-top: 90px;
     height: 100vh;
     max-height: 100vh;
     background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
   }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .hero {
+    height: 75vh;
+    max-height: 75vh;
+  }
+}
+
+@media (min-width: 1024px) {
   .hero__title {
     font-size: 3.5rem;
   }
-  .hero .search-wrapper {
-    width: 80%;
-    max-width: 800px;
+  .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property, .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+    font-size: .8rem;
+  }
+  .hero .search-wrapper__button--icon {
+    height: 40%;
+    margin-right: 1rem;
   }
 }
 
@@ -788,7 +821,7 @@ template {
   line-height: 60px;
   margin: 0;
   font-size: 1.6rem;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: black;
   text-align: center;
@@ -806,7 +839,7 @@ template {
   margin: 0;
   padding: 0 1.5rem;
   font-size: 1rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: black;
   margin-bottom: .75rem;
@@ -889,7 +922,7 @@ template {
   margin-top: 1rem;
   margin-bottom: 60px;
   padding: 2rem 1rem;
-  background-color: #36446d;
+  background-color: #002349;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +969,7 @@ template {
 .contact--adress-wrapper .contact__content {
   margin: 0;
   font-size: .8rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
   margin: .25rem 0;
@@ -962,7 +995,7 @@ template {
   font-size: .8rem;
   text-decoration: none;
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,7 +1039,7 @@ template {
   margin-bottom: 0;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: .9rem;
 }
@@ -1040,7 +1073,7 @@ template {
   font-size: .8rem;
   color: #ffffff;
   text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
@@ -1080,12 +1113,12 @@ template {
   width: 100%;
   margin-top: .5rem;
   padding: .4rem;
-  background-color: #36446d;
+  background-color: #002349;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: .9rem;
 }
 
@@ -1111,7 +1144,7 @@ template {
 
 .contact--form-wrapper .contact-form--input-name::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-email::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-message::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: .8rem;
   -webkit-transition: color 1s ease;
@@ -1120,7 +1153,7 @@ template {
 
 .contact--form-wrapper .contact-form--input-name:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: .8rem;
   -webkit-transition: color 1s ease;
@@ -1129,7 +1162,7 @@ template {
 
 .contact--form-wrapper .contact-form--input-name::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: .8rem;
   -webkit-transition: color 1s ease;
@@ -1138,7 +1171,7 @@ template {
 
 .contact--form-wrapper .contact-form--input-name::placeholder, .contact--form-wrapper .contact-form--input-email::placeholder, .contact--form-wrapper .contact-form--input-phone::placeholder, .contact--form-wrapper .contact-form--input-message::placeholder {
   color: #ffffff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: .8rem;
   -webkit-transition: color 1s ease;
@@ -1180,7 +1213,7 @@ template {
 }
 
 .contact--form-wrapper .contact-form--input-submit:hover {
-  color: #36446d;
+  color: #002349;
   background-color: white;
 }
 
@@ -1356,16 +1389,16 @@ template {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #36446d;
+  background-color: #002349;
 }
 
 .menu__toggler .hamburger-menu {
   width: 30px;
   height: 30px;
-  background: #36446d;
+  background: #002349;
   border: none;
   padding: 0;
-  outline: #36446d;
+  outline: #002349;
   cursor: pointer;
   overflow: hidden;
 }
@@ -1449,9 +1482,9 @@ template {
 
 .new-offers__title {
   margin: 0;
-  font-size: 1.6rem;
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: black;
   text-align: center;
   margin-bottom: 2rem;
@@ -1494,8 +1527,8 @@ template {
 }
 
 .new-offers__wrapper .new-offers__single-offer--description {
-  color: #36446d;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #002349;
+  font-family: "Roboto", sans-serif;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .main-description {
@@ -1509,7 +1542,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .main-description--city, .new-offers__wrapper .new-offers__single-offer--description .main-description--price {
@@ -1533,7 +1566,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--type {
@@ -1602,7 +1635,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .show-offer a {
@@ -1610,21 +1643,22 @@ template {
   height: 36px;
   max-width: 160px;
   color: white;
-  background-color: #36446d;
+  background-color: #002349;
   line-height: 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: 1rem;
-  border: 2px solid rgba(54, 68, 109, 0.5);
+  border: 2px solid rgba(0, 35, 73, 0.5);
+  border-radius: 18px;
   -webkit-transition: background-color 1s ease, color 1s ease;
   transition: background-color 1s ease, color 1s ease;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .show-offer a:hover {
-  color: #36446d;
+  color: #002349;
   background-color: white;
 }
 
@@ -1698,7 +1732,7 @@ template {
   line-height: 80px;
   margin: 0;
   font-size: 1.3rem;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: black;
   text-align: center;
@@ -1740,8 +1774,8 @@ template {
 }
 
 .investments__wrapper .investments__single-offer--description {
-  color: #36446d;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #002349;
+  font-family: "Roboto", sans-serif;
 }
 
 .investments__wrapper .investments__single-offer--description .main-description {
@@ -1755,7 +1789,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .main-description--city, .investments__wrapper .investments__single-offer--description .main-description--street {
@@ -1779,7 +1813,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0 .5rem;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--type {
@@ -1852,7 +1886,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  border-bottom: 1px solid rgba(54, 68, 109, 0.5);
+  border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .show-offer a {
@@ -1860,21 +1894,22 @@ template {
   height: 36px;
   max-width: 160px;
   color: white;
-  background-color: #36446d;
+  background-color: #002349;
   line-height: 32px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: 1rem;
-  border: 2px solid rgba(54, 68, 109, 0.5);
+  border: 2px solid rgba(0, 35, 73, 0.5);
+  border-radius: 18px;
   -webkit-transition: background-color 1s ease, color 1s ease;
   transition: background-color 1s ease, color 1s ease;
 }
 
 .investments__wrapper .investments__single-offer--description .show-offer a:hover {
-  color: #36446d;
+  color: #002349;
   background-color: white;
 }
 
@@ -2038,7 +2073,7 @@ template {
   height: 20vh;
   margin-top: 1rem;
   background-color: #dbe3fd;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #0a1612;
   font-size: 1.15rem;
   display: -webkit-box;
@@ -2080,13 +2115,13 @@ template {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 125%;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Montserrat", sans-serif;
   color: #0a1612;
 }
 
 .single-offer__description--localization .title, .single-offer__description--localization .description, .single-offer__description--localization .list, .single-offer__description--property .title, .single-offer__description--property .description, .single-offer__description--property .list, .single-offer__description--info .title, .single-offer__description--info .description, .single-offer__description--info .list, .single-offer__description--list .title, .single-offer__description--list .description, .single-offer__description--list .list {
   margin: .8rem 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .single-offer__description--localization .title, .single-offer__description--property .title, .single-offer__description--info .title, .single-offer__description--list .title {

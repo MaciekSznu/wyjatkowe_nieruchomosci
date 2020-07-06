@@ -15,10 +15,11 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
     font-size: 1rem;
     border: 2px solid rgba($new-offer-font-color, 0.5);
+    border-radius: 18px;
     transition: background-color 1s ease, color 1s ease;
 
     &:hover {
@@ -71,24 +72,22 @@
 
 @mixin select-item {
   
-    position: relative;
-    display: inline-block;
-    margin-bottom: .5rem;
-    width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: .5rem;
+  width: 100%;
 
-   select {
+  select {
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    padding-left: .6rem;
+    padding-left: .9rem;
     outline: 0;
-    border: 1px solid #36446d;
+    border: none;
     border-radius: 0px;
     background: #ffffff;
     color: #36446d;
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
   }
    select::-ms-expand {
     display: none;
@@ -105,8 +104,8 @@
   .select-arrow {
     position: absolute;
     cursor: pointer;
-    top: 7px;
-    right: .6rem;
+    top: 15px;
+    right: .9rem;
     width: 6px;
     height: 6px;
     border: solid #36446d;
