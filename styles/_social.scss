@@ -13,6 +13,7 @@
   width: 15vw;
   max-width: 60px;
   height: 180px;
+  display: none;
 
   @media (orientation: landscape) {
     bottom: calc(50vh - 90px);
