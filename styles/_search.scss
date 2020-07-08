@@ -41,8 +41,8 @@
         margin-top: 0.75rem;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
-        // background-color: $search-form-btn-bg-color;
-        border: none;
+        background-color: #ffffff;
+        border: 1px solid #36446d;
         border-radius: 1.25rem;
         color: #36446d;
         cursor: pointer;
@@ -108,6 +108,7 @@
         }
 
         &__button {
+          width: 200px;
           font-family: $text-font-family;
           height: 2rem;
           margin: 0.5rem;
