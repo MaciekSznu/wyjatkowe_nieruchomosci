@@ -23,11 +23,11 @@ $desktop-menu-font-color: rgba(#ffffff, .8);
 
 $new-offer-font-color:  #002349;
 
-$new-offer-main-desc-bg-color: #dbe3fd;
+$new-offer-main-desc-bg-color: rgba(#dbe3fd, .5);
 $new-offer-add-desc-bg-color: #f1f4fe;
 
-$investment-main-desc-bg-color: #dbe3fd;
-$investment-add-desc-bg-color: #f1f4fe;
+$investment-main-desc-bg-color: rgba(#dbe3fd, .5);
+$investment-add-desc-bg-color: rgba(#f1f4fe, .5);
 
 $site-title-bg-color: #dbe3fd;
 $site-desc-bg-color: #f1f4fe;
@@ -38,7 +38,7 @@ $summary-font-color: #0a1612;
 
 $single-offer-title-font-size: 1.5rem;
 $single-offer-subtitle-font-size: 1.25rem;
-$single-offer-text-font-size: 1.1rem;
+$single-offer-text-font-size: 1rem;
 
 $single-offer-title-font-color: #0a1612;
 $single-offer-subtitle-font-color: #1a2930;
