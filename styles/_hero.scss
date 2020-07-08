@@ -2,7 +2,8 @@
 @import "./mixins";
 
 .hero,
-.hero-about, .hero-offers {
+.hero-about,
+.hero-offers {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -120,17 +121,18 @@
     background-color: $hero-image-description-bg-color;
     font-family: $text-font-family;
     color: $hero-image-description-font-color;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 500;
 
     .hero-image-description {
       display: flex;
       flex-wrap: wrap;
-      margin: .5rem 1rem;
+      margin: 0.5rem 1rem;
 
-      &--city, &--price {
+      &--city,
+      &--price {
         width: 100%;
-        margin: .25rem 0;
+        margin: 0.25rem 0;
       }
     }
   }
@@ -181,12 +183,13 @@
     .hero-image-description-wrapper {
       font-size: 1rem;
       font-weight: 400;
-  
+
       .hero-image-description {
         margin-left: 2rem;
-  
-        &--city, &--price {
-        margin: .5rem 0;
+
+        &--city,
+        &--price {
+          margin: 0.5rem 0;
         }
       }
     }
@@ -268,4 +271,16 @@
 
 .hero-about {
   background-image: url("./images/heroes/building_01_1200_800.jpg");
+}
+
+.hero-offers {
+  @media (min-width: 1024px) {
+    height: calc(100vh - 112px);
+    max-height: calc(100vh - 112px);
+
+    @media (orientation: portrait) {
+      height: 75vh;
+      max-height: 75vh;
+    }
+  }
 }

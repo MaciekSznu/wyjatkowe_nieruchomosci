@@ -502,7 +502,8 @@ template {
 }
 
 .hero,
-.hero-about, .hero-offers {
+.hero-about,
+.hero-offers {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,7 +527,8 @@ template {
 }
 
 .hero__title,
-.hero-about__title, .hero-offers__title {
+.hero-about__title,
+.hero-offers__title {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -536,14 +538,16 @@ template {
 
 @media (orientation: landscape) {
   .hero,
-  .hero-about, .hero-offers {
+  .hero-about,
+  .hero-offers {
     height: 100vh;
     max-height: calc(100vh - 60px * 2);
   }
 }
 
 .hero .search-wrapper,
-.hero-about .search-wrapper, .hero-offers .search-wrapper {
+.hero-about .search-wrapper,
+.hero-offers .search-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +567,8 @@ template {
 }
 
 .hero .search-wrapper .search-form,
-.hero-about .search-wrapper .search-form, .hero-offers .search-wrapper .search-form {
+.hero-about .search-wrapper .search-form,
+.hero-offers .search-wrapper .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +586,8 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +604,8 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
   position: relative;
   display: inline-block;
   margin-bottom: .5rem;
@@ -606,13 +613,14 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
   display: inline-block;
   width: 100%;
   cursor: pointer;
   padding-left: .9rem;
   outline: 0;
-  border: none;
+  border: 1px solid #36446d;
   border-radius: 0px;
   background: #ffffff;
   color: #36446d;
@@ -622,27 +630,31 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
   display: none;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
 .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
   color: #ffffff;
   background: #36446d;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
   position: absolute;
   cursor: pointer;
   top: 15px;
@@ -660,20 +672,23 @@ template {
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
 .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
   border-color: #ffffff;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
   border-top-color: #cccccc;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
 .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
   font-family: "Roboto", sans-serif;
   width: 200px;
@@ -683,7 +698,8 @@ template {
 }
 
 .hero .search-wrapper .search-form__button,
-.hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
+.hero-about .search-wrapper .search-form__button,
+.hero-offers .search-wrapper .search-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,7 +727,8 @@ template {
 }
 
 .hero .search-wrapper .search-form__button--icon,
-.hero-about .search-wrapper .search-form__button--icon, .hero-offers .search-wrapper .search-form__button--icon {
+.hero-about .search-wrapper .search-form__button--icon,
+.hero-offers .search-wrapper .search-form__button--icon {
   height: 40%;
   width: auto;
   max-width: 16px;
@@ -720,32 +737,37 @@ template {
 
 @media (orientation: landscape) {
   .hero .search-wrapper,
-  .hero-about .search-wrapper, .hero-offers .search-wrapper {
+  .hero-about .search-wrapper,
+  .hero-offers .search-wrapper {
     width: 100%;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
     top: 1.5rem;
     right: 1.4rem;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     margin: 0.5rem;
   }
 }
 
 .hero .hero-image-description-wrapper,
-.hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+.hero-about .hero-image-description-wrapper,
+.hero-offers .hero-image-description-wrapper {
   position: absolute;
   right: 0;
   bottom: 3rem;
@@ -753,99 +775,116 @@ template {
   background-color: rgba(54, 68, 109, 0.75);
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .hero .hero-image-description-wrapper .hero-image-description,
-.hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+.hero-about .hero-image-description-wrapper .hero-image-description,
+.hero-offers .hero-image-description-wrapper .hero-image-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
 .hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
 .hero-about .hero-image-description-wrapper .hero-image-description--city,
-.hero-about .hero-image-description-wrapper .hero-image-description--price, .hero-offers .hero-image-description-wrapper .hero-image-description--city, .hero-offers .hero-image-description-wrapper .hero-image-description--price {
+.hero-about .hero-image-description-wrapper .hero-image-description--price,
+.hero-offers .hero-image-description-wrapper .hero-image-description--city,
+.hero-offers .hero-image-description-wrapper .hero-image-description--price {
   width: 100%;
-  margin: .25rem 0;
+  margin: 0.25rem 0;
 }
 
 @media (min-width: 768px) {
   .hero,
-  .hero-about, .hero-offers {
+  .hero-about,
+  .hero-offers {
     height: 50vh;
     max-height: 600px;
     background-image: url("./images/heroes/interior_06_1024_683.jpg");
   }
   .hero__title,
-  .hero-about__title, .hero-offers__title {
+  .hero-about__title,
+  .hero-offers__title {
     font-size: 2.5rem;
   }
   .hero .search-wrapper,
-  .hero-about .search-wrapper, .hero-offers .search-wrapper {
+  .hero-about .search-wrapper,
+  .hero-offers .search-wrapper {
     height: 20%;
     width: 100%;
   }
   .hero .search-wrapper .search-form,
-  .hero-about .search-wrapper .search-form, .hero-offers .search-wrapper .search-form {
+  .hero-about .search-wrapper .search-form,
+  .hero-offers .search-wrapper .search-form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
     margin: 0;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
     top: 19px;
     right: 1.2rem;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     height: 2rem;
     margin: 0.5rem;
   }
   .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
+  .hero-about .search-wrapper .search-form__button,
+  .hero-offers .search-wrapper .search-form__button {
     font-family: "Roboto", sans-serif;
     height: 2rem;
     margin: 0.5rem;
   }
   .hero .hero-image-description-wrapper,
-  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper {
     font-size: 1rem;
     font-weight: 400;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
-  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description {
     margin-left: 2rem;
   }
   .hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
   .hero-about .hero-image-description-wrapper .hero-image-description--city,
-  .hero-about .hero-image-description-wrapper .hero-image-description--price, .hero-offers .hero-image-description-wrapper .hero-image-description--city, .hero-offers .hero-image-description-wrapper .hero-image-description--price {
-    margin: .5rem 0;
+  .hero-about .hero-image-description-wrapper .hero-image-description--price,
+  .hero-offers .hero-image-description-wrapper .hero-image-description--city,
+  .hero-offers .hero-image-description-wrapper .hero-image-description--price {
+    margin: 0.5rem 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero,
-  .hero-about, .hero-offers {
+  .hero-about,
+  .hero-offers {
     margin-top: 0;
     padding-top: 90px;
     height: 100vh;
@@ -856,7 +895,8 @@ template {
 
 @media (min-width: 1024px) and (orientation: portrait) {
   .hero,
-  .hero-about, .hero-offers {
+  .hero-about,
+  .hero-offers {
     height: 75vh;
     max-height: 75vh;
   }
@@ -864,66 +904,91 @@ template {
 
 @media (min-width: 1024px) {
   .hero__title,
-  .hero-about__title, .hero-offers__title {
+  .hero-about__title,
+  .hero-offers__title {
     font-size: 3.5rem;
   }
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
+  .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     font-size: 0.8rem;
   }
   .hero .search-wrapper__button--icon,
-  .hero-about .search-wrapper__button--icon, .hero-offers .search-wrapper__button--icon {
+  .hero-about .search-wrapper__button--icon,
+  .hero-offers .search-wrapper__button--icon {
     height: 40%;
     margin-right: 1rem;
   }
   .hero .hero-image-description-wrapper,
-  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper {
     bottom: 5rem;
     font-size: 1.5rem;
     font-weight: 300;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
-  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description {
     margin-left: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .hero,
-  .hero-about, .hero-offers {
+  .hero-about,
+  .hero-offers {
     background-image: url("./images/heroes/interior_06_1920_1280.jpg");
   }
   .hero__title,
-  .hero-about__title, .hero-offers__title {
+  .hero-about__title,
+  .hero-offers__title {
     font-size: 3.5rem;
   }
   .hero .search-wrapper,
-  .hero-about .search-wrapper, .hero-offers .search-wrapper {
+  .hero-about .search-wrapper,
+  .hero-offers .search-wrapper {
     bottom: 2rem;
     width: 60%;
     max-height: 140px;
   }
   .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
+  .hero-about .search-wrapper .search-form__button,
+  .hero-offers .search-wrapper .search-form__button {
     height: 2rem;
     margin-top: 0.5rem;
   }
   .hero .hero-image-description-wrapper,
-  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper {
     bottom: 6rem;
     font-size: 1.65rem;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
-  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description {
     margin-left: 4rem;
   }
 }
 
 .hero-about {
   background-image: url("./images/heroes/building_01_1200_800.jpg");
+}
+
+@media (min-width: 1024px) {
+  .hero-offers {
+    height: calc(100vh - 112px);
+    max-height: calc(100vh - 112px);
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .hero-offers {
+    height: 75vh;
+    max-height: 75vh;
+  }
 }
 
 .about {
@@ -2494,6 +2559,250 @@ template {
   }
   .single-offer__contact--photo {
     margin-left: 0;
+  }
+}
+
+.search .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 0 1rem;
+}
+
+.search .search-wrapper .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding-left: .9rem;
+  outline: 0;
+  border: 1px solid #36446d;
+  border-radius: 0px;
+  background: #ffffff;
+  color: #36446d;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
+  display: none;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
+  color: #ffffff;
+  background: #36446d;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: .9rem;
+  width: 6px;
+  height: 6px;
+  border: solid #36446d;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
+  border-color: #ffffff;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
+  border-top-color: #cccccc;
+}
+
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+.search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  border-radius: 1.25rem;
+}
+
+.search .search-wrapper .search-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 180px;
+  height: 2.5rem;
+  margin-top: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1.25rem;
+  color: #36446d;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search .search-wrapper .search-form__button--icon {
+  height: 40%;
+  width: auto;
+  max-width: 16px;
+  margin-right: 0.5rem;
+}
+
+@media (orientation: landscape) {
+  .search .search-wrapper {
+    width: 100%;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+    top: 1.5rem;
+    right: 1.4rem;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .search .search-wrapper {
+    height: 20%;
+    width: 100%;
+  }
+  .search .search-wrapper .search-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+    margin: 0;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+    top: 19px;
+    right: 1.2rem;
+  }
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+    height: 2rem;
+    margin: 0.5rem;
+  }
+  .search .search-wrapper .search-form__button {
+    font-family: "Roboto", sans-serif;
+    height: 2rem;
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  .search .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .search .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+    font-size: 0.8rem;
+  }
+  .search .search-wrapper__button--icon {
+    height: 40%;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1280px) {
+  .search .search-wrapper {
+    bottom: 2rem;
+    width: 60%;
+    max-height: 140px;
+  }
+  .search .search-wrapper .search-form__button {
+    height: 2rem;
+    margin-top: 0.5rem;
   }
 }
 
