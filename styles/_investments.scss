@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 .investments {
   width: 100%;
@@ -37,7 +37,7 @@
         width: 100%;
         height: 80vw;
         max-height: 440px;
-        background-image: url('./images/heroes/hero_01_1024_768.jpg');
+        background-image: url("./images/heroes/hero_01_1024_768.jpg");
         background-position: center;
         background-size: cover;
       }
@@ -45,16 +45,17 @@
       &--description {
         color: $new-offer-font-color;
         font-family: $text-font-family;
-        
+
         .main-description {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 0 .5rem;
-          border-bottom: 1px solid rgba($new-offer-font-color, .5);
+          padding: 0 0.5rem;
+          border-bottom: 1px solid rgba($new-offer-font-color, 0.5);
 
-          &--city, &--street {
-            margin: .75rem 0;
+          &--city,
+          &--street {
+            margin: 0.75rem 0;
           }
 
           &--city {
@@ -67,63 +68,67 @@
           justify-content: space-between;
           align-items: center;
           flex-wrap: wrap;
-          padding: 0 .5rem;
-          border-bottom: 1px solid rgba($new-offer-font-color, .5);
+          padding: 0 0.5rem;
+          border-bottom: 1px solid rgba($new-offer-font-color, 0.5);
 
           &--type {
-            width:100%;
+            width: 100%;
             text-align: center;
             text-transform: uppercase;
             font-weight: 600;
-            margin: 1rem 0 .5rem;
+            margin: 1rem 0 0.5rem;
           }
 
-          &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
+          &--rooms,
+          &--bedrooms,
+          &--bathrooms,
+          &--area,
+          &--price {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            padding: .5rem;
+            padding: 0.5rem;
 
             .description-icon {
               height: 20px;
               width: 20px;
-              margin: .25rem;
+              margin: 0.25rem;
               background-repeat: no-repeat;
             }
 
             .description-value {
-              font-size: .7rem;
+              font-size: 0.7rem;
             }
           }
 
           &--rooms {
             .description-icon {
-              background-image: url('./images/icons/door-open.svg');
+              background-image: url("./images/icons/door-open.svg");
             }
           }
 
           &--bedrooms {
             .description-icon {
-              background-image: url('./images/icons/bed.svg');
+              background-image: url("./images/icons/bed.svg");
             }
           }
 
           &--bathrooms {
             .description-icon {
-              background-image: url('./images/icons/bath.svg');
+              background-image: url("./images/icons/bath.svg");
             }
           }
 
           &--area {
             .description-icon {
-              background-image: url('./images/icons/home.svg');
+              background-image: url("./images/icons/home.svg");
             }
           }
 
           &--price {
             .description-icon {
-              background-image: url('./images/icons/money-bill-wave.svg');
+              background-image: url("./images/icons/money-bill-wave.svg");
             }
           }
         }
@@ -137,7 +142,7 @@
           @include show-offer-anchor;
 
           height: 60px;
-          border-bottom: 1px solid rgba($new-offer-font-color, .5);
+          border-bottom: 1px solid rgba($new-offer-font-color, 0.5);
         }
       }
 
@@ -184,15 +189,18 @@
             padding: 0 3rem;
             border-bottom: none;
 
-            &--rooms, &--bedrooms,&--bathrooms,&--area, &--price {
-
+            &--rooms,
+            &--bedrooms,
+            &--bathrooms,
+            &--area,
+            &--price {
               .description-icon {
                 height: 25px;
                 width: 25px;
               }
-  
+
               .description-value {
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
             }
           }
@@ -206,8 +214,8 @@
             padding: 2rem;
 
             &--text {
-              margin: .5rem 0;
-              font-size: .9rem;
+              margin: 0.5rem 0;
+              font-size: 0.9rem;
             }
           }
 
@@ -249,19 +257,16 @@
   }
 
   @media (min-width: 1024px) {
-
     &__title {
       font-size: 2.25rem;
     }
   }
 
   @media (min-width: 1280px) {
-
     &__title {
       height: 100px;
       line-height: 100px;
       font-size: 3rem;
     }
-
   }
 }

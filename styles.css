@@ -502,7 +502,7 @@ template {
 }
 
 .hero,
-.hero-about {
+.hero-about, .hero-offers {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,7 +526,7 @@ template {
 }
 
 .hero__title,
-.hero-about__title {
+.hero-about__title, .hero-offers__title {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -536,14 +536,14 @@ template {
 
 @media (orientation: landscape) {
   .hero,
-  .hero-about {
+  .hero-about, .hero-offers {
     height: 100vh;
     max-height: calc(100vh - 60px * 2);
   }
 }
 
 .hero .search-wrapper,
-.hero-about .search-wrapper {
+.hero-about .search-wrapper, .hero-offers .search-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +563,7 @@ template {
 }
 
 .hero .search-wrapper .search-form,
-.hero-about .search-wrapper .search-form {
+.hero-about .search-wrapper .search-form, .hero-offers .search-wrapper .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,7 +581,7 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +598,7 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
   position: relative;
   display: inline-block;
   margin-bottom: .5rem;
@@ -606,7 +606,7 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
   display: inline-block;
   width: 100%;
   cursor: pointer;
@@ -622,26 +622,27 @@ template {
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
   display: none;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
   color: #ffffff;
   background: #36446d;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
   position: absolute;
   cursor: pointer;
   top: 15px;
@@ -659,19 +660,21 @@ template {
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
   border-color: #ffffff;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
   border-top-color: #cccccc;
 }
 
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
 .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
 .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
   font-family: "Roboto", sans-serif;
   width: 200px;
   height: 2.5rem;
@@ -680,7 +683,7 @@ template {
 }
 
 .hero .search-wrapper .search-form__button,
-.hero-about .search-wrapper .search-form__button {
+.hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,7 +703,6 @@ template {
   margin-top: 0.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background-color: #ffffff;
   border: none;
   border-radius: 1.25rem;
   color: #36446d;
@@ -709,7 +711,7 @@ template {
 }
 
 .hero .search-wrapper .search-form__button--icon,
-.hero-about .search-wrapper .search-form__button--icon {
+.hero-about .search-wrapper .search-form__button--icon, .hero-offers .search-wrapper .search-form__button--icon {
   height: 40%;
   width: auto;
   max-width: 16px;
@@ -718,86 +720,132 @@ template {
 
 @media (orientation: landscape) {
   .hero .search-wrapper,
-  .hero-about .search-wrapper {
+  .hero-about .search-wrapper, .hero-offers .search-wrapper {
     width: 100%;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
     top: 1.5rem;
     right: 1.4rem;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     margin: 0.5rem;
   }
 }
 
+.hero .hero-image-description-wrapper,
+.hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 3rem;
+  width: 50%;
+  background-color: rgba(54, 68, 109, 0.75);
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.hero .hero-image-description-wrapper .hero-image-description,
+.hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: .5rem 1rem;
+}
+
+.hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
+.hero-about .hero-image-description-wrapper .hero-image-description--city,
+.hero-about .hero-image-description-wrapper .hero-image-description--price, .hero-offers .hero-image-description-wrapper .hero-image-description--city, .hero-offers .hero-image-description-wrapper .hero-image-description--price {
+  width: 100%;
+  margin: .25rem 0;
+}
+
 @media (min-width: 768px) {
   .hero,
-  .hero-about {
+  .hero-about, .hero-offers {
     height: 50vh;
     max-height: 600px;
     background-image: url("./images/heroes/interior_06_1024_683.jpg");
   }
   .hero__title,
-  .hero-about__title {
+  .hero-about__title, .hero-offers__title {
     font-size: 2.5rem;
   }
   .hero .search-wrapper,
-  .hero-about .search-wrapper {
+  .hero-about .search-wrapper, .hero-offers .search-wrapper {
     height: 20%;
     width: 100%;
   }
   .hero .search-wrapper .search-form,
-  .hero-about .search-wrapper .search-form {
+  .hero-about .search-wrapper .search-form, .hero-offers .search-wrapper .search-form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
     margin: 0;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
     top: 19px;
     right: 1.2rem;
   }
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     height: 2rem;
     margin: 0.5rem;
   }
   .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button {
+  .hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
     font-family: "Roboto", sans-serif;
     height: 2rem;
     margin: 0.5rem;
+  }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+    margin-left: 2rem;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
+  .hero-about .hero-image-description-wrapper .hero-image-description--city,
+  .hero-about .hero-image-description-wrapper .hero-image-description--price, .hero-offers .hero-image-description-wrapper .hero-image-description--city, .hero-offers .hero-image-description-wrapper .hero-image-description--price {
+    margin: .5rem 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero,
-  .hero-about {
+  .hero-about, .hero-offers {
     margin-top: 0;
     padding-top: 90px;
     height: 100vh;
@@ -808,7 +856,7 @@ template {
 
 @media (min-width: 1024px) and (orientation: portrait) {
   .hero,
-  .hero-about {
+  .hero-about, .hero-offers {
     height: 75vh;
     max-height: 75vh;
   }
@@ -816,41 +864,61 @@ template {
 
 @media (min-width: 1024px) {
   .hero__title,
-  .hero-about__title {
+  .hero-about__title, .hero-offers__title {
     font-size: 3.5rem;
   }
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
   .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
+  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction, .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
+  .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
     font-size: 0.8rem;
   }
   .hero .search-wrapper__button--icon,
-  .hero-about .search-wrapper__button--icon {
+  .hero-about .search-wrapper__button--icon, .hero-offers .search-wrapper__button--icon {
     height: 40%;
     margin-right: 1rem;
+  }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+    bottom: 5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+    margin-left: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .hero,
-  .hero-about {
+  .hero-about, .hero-offers {
     background-image: url("./images/heroes/interior_06_1920_1280.jpg");
   }
   .hero__title,
-  .hero-about__title {
+  .hero-about__title, .hero-offers__title {
     font-size: 3.5rem;
   }
   .hero .search-wrapper,
-  .hero-about .search-wrapper {
+  .hero-about .search-wrapper, .hero-offers .search-wrapper {
     bottom: 2rem;
     width: 60%;
     max-height: 140px;
   }
   .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button {
+  .hero-about .search-wrapper .search-form__button, .hero-offers .search-wrapper .search-form__button {
     height: 2rem;
     margin-top: 0.5rem;
+  }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper, .hero-offers .hero-image-description-wrapper {
+    bottom: 6rem;
+    font-size: 1.65rem;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description, .hero-offers .hero-image-description-wrapper .hero-image-description {
+    margin-left: 4rem;
   }
 }
 
@@ -1093,17 +1161,17 @@ template {
 
 .contact--adress-wrapper .contact__content {
   margin: 0;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  margin: .35rem 0;
+  margin: 0.35rem 0;
 }
 
 .contact--adress-wrapper .contact__content .contact-icon {
   height: 1rem;
   width: auto;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .contact--adress-wrapper .contact__content:nth-of-type(2) {
@@ -1113,11 +1181,11 @@ template {
 .contact--adress-wrapper .contact__content--cta {
   height: auto;
   width: 100%;
-  margin: .35rem 0;
+  margin: 0.35rem 0;
 }
 
 .contact--adress-wrapper .contact__content--cta-link {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1135,7 +1203,7 @@ template {
 .contact--adress-wrapper .contact__content--cta-link .contact-icon {
   height: 1rem;
   width: auto;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .contact--adress-wrapper .contact__content--cta:hover .contact__content--cta-link {
@@ -1166,11 +1234,11 @@ template {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .contact--footer-menu-wrapper .footer-menu {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
@@ -1184,7 +1252,7 @@ template {
 
 .contact--footer-menu-wrapper .footer-menu__list-item {
   width: 100px;
-  margin: .25rem 0;
+  margin: 0.25rem 0;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-color 1s ease;
   transition: border-color 1s ease;
@@ -1195,7 +1263,7 @@ template {
 }
 
 .contact--footer-menu-wrapper .footer-menu__list-item a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #ffffff;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -1236,15 +1304,15 @@ template {
 
 .contact--form-wrapper .contact-form--input-name, .contact--form-wrapper .contact-form--input-email, .contact--form-wrapper .contact-form--input-phone, .contact--form-wrapper .contact-form--input-message, .contact--form-wrapper .contact-form--input-submit {
   width: 100%;
-  margin-top: .5rem;
-  padding: .5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
   background-color: #002349;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .contact--form-wrapper .contact-form--input-name:focus, .contact--form-wrapper .contact-form--input-email:focus, .contact--form-wrapper .contact-form--input-phone:focus, .contact--form-wrapper .contact-form--input-message:focus, .contact--form-wrapper .contact-form--input-submit:focus {
@@ -1271,7 +1339,7 @@ template {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -1280,7 +1348,7 @@ template {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -1289,7 +1357,7 @@ template {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -1298,7 +1366,7 @@ template {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -1328,7 +1396,7 @@ template {
 
 .contact--form-wrapper .contact-form--input-submit {
   max-width: 240px;
-  margin: 1.5rem auto .5rem;
+  margin: 1.5rem auto 0.5rem;
   border: 1px solid #ffffff;
   height: 2.25rem;
   font-weight: 500;
@@ -1371,8 +1439,8 @@ template {
   }
   .contact--footer-menu-wrapper .footer-menu-title {
     padding-left: 1.5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .contact--footer-menu-wrapper .footer-menu {
     margin-top: 0;
@@ -1623,6 +1691,13 @@ template {
   }
 }
 
+@media (min-width: 1280px) {
+  .new-offers__title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 .new-offers__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -1668,12 +1743,12 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .main-description--city, .new-offers__wrapper .new-offers__single-offer--description .main-description--price {
-  margin: .75rem 0;
+  margin: 0.75rem 0;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .main-description--city {
@@ -1692,7 +1767,7 @@ template {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
@@ -1715,19 +1790,19 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-icon, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-icon {
   height: 20px;
   width: 20px;
-  margin: .25rem;
+  margin: 0.25rem;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
 .new-offers__wrapper .new-offers__single-offer--description .additional-description--rooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bedrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--bathrooms .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--area .description-value, .new-offers__wrapper .new-offers__single-offer--description .additional-description--ground-area .description-value {
-  font-size: .7rem;
+  font-size: 0.7rem;
   z-index: -1;
 }
 
@@ -1915,12 +1990,12 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
 .investments__wrapper .investments__single-offer--description .main-description--city, .investments__wrapper .investments__single-offer--description .main-description--street {
-  margin: .75rem 0;
+  margin: 0.75rem 0;
 }
 
 .investments__wrapper .investments__single-offer--description .main-description--city {
@@ -1939,7 +2014,7 @@ template {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border-bottom: 1px solid rgba(0, 35, 73, 0.5);
 }
 
@@ -1948,7 +2023,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 1rem 0 .5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms, .investments__wrapper .investments__single-offer--description .additional-description--area, .investments__wrapper .investments__single-offer--description .additional-description--price {
@@ -1965,18 +2040,18 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-icon, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-icon, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-icon, .investments__wrapper .investments__single-offer--description .additional-description--area .description-icon, .investments__wrapper .investments__single-offer--description .additional-description--price .description-icon {
   height: 20px;
   width: 20px;
-  margin: .25rem;
+  margin: 0.25rem;
   background-repeat: no-repeat;
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--area .description-value, .investments__wrapper .investments__single-offer--description .additional-description--price .description-value {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-icon {
@@ -2089,7 +2164,7 @@ template {
     width: 25px;
   }
   .investments__wrapper .investments__single-offer--description .additional-description--rooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bedrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--bathrooms .description-value, .investments__wrapper .investments__single-offer--description .additional-description--area .description-value, .investments__wrapper .investments__single-offer--description .additional-description--price .description-value {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .investments__wrapper .investments__single-offer--description .long-description {
     height: 45%;
@@ -2109,8 +2184,8 @@ template {
     padding: 2rem;
   }
   .investments__wrapper .investments__single-offer--description .long-description--text {
-    margin: .5rem 0;
-    font-size: .9rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
   }
   .investments__wrapper .investments__single-offer--description .show-offer {
     height: 15%;

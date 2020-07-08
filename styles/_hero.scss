@@ -2,7 +2,7 @@
 @import "./mixins";
 
 .hero,
-.hero-about {
+.hero-about, .hero-offers {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
         margin-top: 0.75rem;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
-        background-color: $search-form-btn-bg-color;
+        // background-color: $search-form-btn-bg-color;
         border: none;
         border-radius: 1.25rem;
         color: #36446d;
@@ -108,6 +108,29 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .hero-image-description-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    width: 50%;
+    background-color: $hero-image-description-bg-color;
+    font-family: $text-font-family;
+    color: $hero-image-description-font-color;
+    font-size: .8rem;
+    font-weight: 500;
+
+    .hero-image-description {
+      display: flex;
+      flex-wrap: wrap;
+      margin: .5rem 1rem;
+
+      &--city, &--price {
+        width: 100%;
+        margin: .25rem 0;
       }
     }
   }
@@ -154,6 +177,19 @@
         }
       }
     }
+
+    .hero-image-description-wrapper {
+      font-size: 1rem;
+      font-weight: 400;
+  
+      .hero-image-description {
+        margin-left: 2rem;
+  
+        &--city, &--price {
+        margin: .5rem 0;
+        }
+      }
+    }
   }
 
   @media (min-width: 1024px) {
@@ -173,9 +209,6 @@
     }
 
     .search-wrapper {
-      // width: 80%;
-      // max-width: 800px;
-
       .search-form-selects-wrapper {
         .single-select-wrapper {
           .search-form__property,
@@ -186,29 +219,20 @@
       }
 
       &__button {
-        // font-size: .8rem;
-        // font-weight: 500;
-        // width: 180px;
-        // height: 2.5rem;
-        // margin-top: .75rem;
-        // letter-spacing: .1rem;
-        // text-transform: uppercase;
-        // background-color: $search-form-btn-bg-color;
-        // border: none;
-        // border-radius: 1.25rem;
-        // color: #36446d;
-        // cursor: pointer;
-        // transition: background-color 1s ease, color 1s ease;
-
         &--icon {
           height: 40%;
           margin-right: 1rem;
         }
+      }
+    }
 
-        // &:hover {
-        //   color: $search-form-btn-bg-color;
-        //   background-color: white;
-        // }
+    .hero-image-description-wrapper {
+      bottom: 5rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+
+      .hero-image-description {
+        margin-left: 3rem;
       }
     }
   }
@@ -228,6 +252,15 @@
       .search-form__button {
         height: 2rem;
         margin-top: 0.5rem;
+      }
+    }
+
+    .hero-image-description-wrapper {
+      bottom: 6rem;
+      font-size: 1.65rem;
+
+      .hero-image-description {
+        margin-left: 4rem;
       }
     }
   }

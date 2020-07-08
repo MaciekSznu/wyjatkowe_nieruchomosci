@@ -1,5 +1,5 @@
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 .contact {
   width: 100%;
@@ -32,29 +32,29 @@
 
     .contact__content {
       margin: 0;
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-family: $text-font-family;
       font-weight: 400;
       color: $contact-font-color;
-      margin: .35rem 0;
+      margin: 0.35rem 0;
 
-        .contact-icon {
-          height: 1rem;
-          width: auto;
-          margin-right: .5rem;
-        }
+      .contact-icon {
+        height: 1rem;
+        width: auto;
+        margin-right: 0.5rem;
+      }
 
       &:nth-of-type(2) {
         margin-left: 24px;
       }
-      
+
       &--cta {
         height: auto;
         width: 100%;
-        margin: .35rem 0;
+        margin: 0.35rem 0;
 
         &-link {
-          font-size: .9rem;
+          font-size: 0.9rem;
           text-decoration: none;
           color: $contact-font-color;
           font-family: $text-font-family;
@@ -66,7 +66,7 @@
           .contact-icon {
             height: 1rem;
             width: auto;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
           }
         }
 
@@ -92,11 +92,11 @@
       text-transform: uppercase;
       font-family: $footer-mobile-menu-font-family;
       font-weight: 500;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
     .footer-menu {
-      margin-top: .75rem;
+      margin-top: 0.75rem;
       margin-bottom: 1.5rem;
 
       &__list {
@@ -105,19 +105,19 @@
         margin: 0;
         padding: 0;
         text-transform: uppercase;
-  
+
         &-item {
           width: 100px;
-          margin: .25rem 0;
+          margin: 0.25rem 0;
           border-bottom: 1px solid transparent;
           transition: border-color 1s ease;
 
           &:hover {
             border-color: $footer-mobile-menu-font-color;
           }
-  
+
           a {
-            font-size: .9rem;
+            font-size: 0.9rem;
             color: $footer-mobile-menu-font-color;
             text-decoration: none;
             font-family: $footer-mobile-menu-font-family;
@@ -143,34 +143,44 @@
       align-items: flex-start;
       margin-top: 1rem;
 
-      &--input-name,  &--input-email,  &--input-phone,  &--input-message,  &--input-submit {
+      &--input-name,
+      &--input-email,
+      &--input-phone,
+      &--input-message,
+      &--input-submit {
         width: 100%;
-        margin-top: .5rem;
-        padding: .5rem;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
         background-color: $mobile-contact-bg-color;
         border: none;
         border-radius: 0;
         border-bottom: 1px solid #ffffff;
         color: $contact-font-color;
         font-family: $text-font-family;
-        font-size: .9rem;
+        font-size: 0.9rem;
 
         &:focus {
-          outline:none;
+          outline: none;
         }
       }
 
-      &--input-name,  &--input-email,  &--input-phone,  &--input-message {
+      &--input-name,
+      &--input-email,
+      &--input-phone,
+      &--input-message {
         &:hover::placeholder {
           color: $base-gold-color;
         }
       }
 
-      &--input-name::placeholder,  &--input-email::placeholder,  &--input-phone::placeholder,  &--input-message::placeholder {
+      &--input-name::placeholder,
+      &--input-email::placeholder,
+      &--input-phone::placeholder,
+      &--input-message::placeholder {
         color: $contact-font-color;
         font-family: $text-font-family;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: 0.9rem;
         transition: color 1s ease;
       }
 
@@ -185,7 +195,7 @@
 
       &--input-submit {
         max-width: 240px;
-        margin: 1.5rem auto .5rem;
+        margin: 1.5rem auto 0.5rem;
         border: 1px solid #ffffff;
         height: 2.25rem;
         font-weight: 500;
@@ -221,8 +231,8 @@
 
       .footer-menu-title {
         padding-left: 1.5rem;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
       }
 
       .footer-menu {
@@ -274,7 +284,7 @@
         &--input-message {
           height: 80px;
           resize: none;
-  
+
           &::placeholder {
             transform: translateY(52px);
           }
