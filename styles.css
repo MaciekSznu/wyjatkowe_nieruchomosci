@@ -529,11 +529,34 @@ template {
 .hero__title,
 .hero-about__title,
 .hero-offers__title {
-  font-size: 1.6rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  padding: 0.8rem 0;
+  margin: 0;
+  background-color: rgba(54, 68, 109, 0.75);
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: white;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.hero__title::after,
+.hero-about__title::after,
+.hero-offers__title::after {
+  position: absolute;
+  content: '';
+  width: 40%;
+  max-width: 400px;
+  height: 2px;
+  bottom: .6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("./images/gallery/page_title_underline.svg");
+  border-radius: 1px;
 }
 
 @media (orientation: landscape) {
@@ -770,13 +793,13 @@ template {
 .hero-offers .hero-image-description-wrapper {
   position: absolute;
   right: 0;
-  bottom: 3rem;
+  bottom: 4.5rem;
   width: 50%;
   background-color: rgba(54, 68, 109, 0.75);
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hero .hero-image-description-wrapper .hero-image-description,
@@ -810,7 +833,15 @@ template {
   .hero__title,
   .hero-about__title,
   .hero-offers__title {
-    font-size: 2.5rem;
+    bottom: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  .hero__title::after,
+  .hero-about__title::after,
+  .hero-offers__title::after {
+    width: 30%;
+    bottom: .8rem;
   }
   .hero .search-wrapper,
   .hero-about .search-wrapper,
@@ -864,6 +895,7 @@ template {
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
   .hero-offers .hero-image-description-wrapper {
+    bottom: 6.5rem;
     font-size: 1rem;
     font-weight: 400;
   }
@@ -906,7 +938,14 @@ template {
   .hero__title,
   .hero-about__title,
   .hero-offers__title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    padding: 1.25rem 0;
+  }
+  .hero__title::after,
+  .hero-about__title::after,
+  .hero-offers__title::after {
+    width: 30%;
+    bottom: 1.05rem;
   }
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
   .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
@@ -925,8 +964,8 @@ template {
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
   .hero-offers .hero-image-description-wrapper {
-    bottom: 5rem;
-    font-size: 1.5rem;
+    bottom: 8rem;
+    font-size: 1.15rem;
     font-weight: 300;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
@@ -945,7 +984,16 @@ template {
   .hero__title,
   .hero-about__title,
   .hero-offers__title {
-    font-size: 3.5rem;
+    bottom: 2.5rem;
+    font-size: 3rem;
+    padding: 1.35rem 0;
+  }
+  .hero__title::after,
+  .hero-about__title::after,
+  .hero-offers__title::after {
+    width: 30%;
+    height: 3px;
+    bottom: 1.15rem;
   }
   .hero .search-wrapper,
   .hero-about .search-wrapper,
@@ -963,8 +1011,8 @@ template {
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
   .hero-offers .hero-image-description-wrapper {
-    bottom: 6rem;
-    font-size: 1.65rem;
+    bottom: 10rem;
+    font-size: 1.25rem;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
   .hero-about .hero-image-description-wrapper .hero-image-description,

@@ -19,11 +19,31 @@
   background-size: cover;
 
   &__title {
-    font-size: 1.6rem;
-    font-family: $lead-font-family;
-    font-weight: 700;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin: 0;
+    background-color: $hero-image-description-bg-color;
+    font-size: 1.25rem;
+    font-family: $text-font-family;
+    font-weight: 400;
     color: white;
     text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 40%;
+      max-width: 400px;
+      height: 2px;
+      bottom: .6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url('./images/gallery/page_title_underline.svg');
+      border-radius: 1px;
+    }
   }
 
   @media (orientation: landscape) {
@@ -116,13 +136,13 @@
   .hero-image-description-wrapper {
     position: absolute;
     right: 0;
-    bottom: 3rem;
+    bottom: 4.5rem;
     width: 50%;
     background-color: $hero-image-description-bg-color;
     font-family: $text-font-family;
     color: $hero-image-description-font-color;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 400;
 
     .hero-image-description {
       display: flex;
@@ -143,7 +163,14 @@
     background-image: url("./images/heroes/interior_06_1024_683.jpg");
 
     &__title {
-      font-size: 2.5rem;
+      bottom: 1.5rem;
+      font-size: 2rem;
+      padding: 1rem 0;
+
+      &::after {
+        width: 30%;
+        bottom: .8rem;
+      }
     }
 
     .search-wrapper {
@@ -181,6 +208,7 @@
     }
 
     .hero-image-description-wrapper {
+      bottom: 6.5rem;
       font-size: 1rem;
       font-weight: 400;
 
@@ -208,7 +236,13 @@
     }
 
     &__title {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
+      padding: 1.25rem 0;
+
+      &::after {
+        width: 30%;
+        bottom: 1.05rem;
+      }
     }
 
     .search-wrapper {
@@ -230,8 +264,8 @@
     }
 
     .hero-image-description-wrapper {
-      bottom: 5rem;
-      font-size: 1.5rem;
+      bottom: 8rem;
+      font-size: 1.15rem;
       font-weight: 300;
 
       .hero-image-description {
@@ -244,7 +278,15 @@
     background-image: url("./images/heroes/interior_06_1920_1280.jpg");
 
     &__title {
-      font-size: 3.5rem;
+      bottom: 2.5rem;
+      font-size: 3rem;
+      padding: 1.35rem 0;
+
+      &::after {
+        width: 30%;
+        height: 3px;
+        bottom: 1.15rem;
+      }
     }
 
     .search-wrapper {
@@ -259,8 +301,8 @@
     }
 
     .hero-image-description-wrapper {
-      bottom: 6rem;
-      font-size: 1.65rem;
+      bottom: 10rem;
+      font-size: 1.25rem;
 
       .hero-image-description {
         margin-left: 4rem;
