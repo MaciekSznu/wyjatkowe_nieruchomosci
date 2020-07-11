@@ -547,11 +547,11 @@ template {
 .hero-about__title::after,
 .hero-offers__title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 40%;
   max-width: 400px;
   height: 2px;
-  bottom: .6rem;
+  bottom: 0.6rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -565,226 +565,6 @@ template {
   .hero-offers {
     height: 100vh;
     max-height: calc(100vh - 60px * 2);
-  }
-}
-
-.hero .search-wrapper,
-.hero-about .search-wrapper,
-.hero-offers .search-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 100%;
-  padding: 1rem 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.hero .search-wrapper .search-form,
-.hero-about .search-wrapper .search-form,
-.hero-offers .search-wrapper .search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
-  position: relative;
-  display: inline-block;
-  margin-bottom: .5rem;
-  width: 100%;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select {
-  display: inline-block;
-  width: 100%;
-  cursor: pointer;
-  padding-left: .9rem;
-  outline: 0;
-  border: 1px solid #36446d;
-  border-radius: 0px;
-  background: #ffffff;
-  color: #36446d;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
-  display: none;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
-  color: #ffffff;
-  background: #36446d;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
-  position: absolute;
-  cursor: pointer;
-  top: 15px;
-  right: .9rem;
-  width: 6px;
-  height: 6px;
-  border: solid #36446d;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
-  border-color: #ffffff;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
-  border-top-color: #cccccc;
-}
-
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-.hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-.hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-.hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
-  font-family: "Roboto", sans-serif;
-  width: 200px;
-  height: 2.5rem;
-  font-size: 0.9rem;
-  border-radius: 1.25rem;
-}
-
-.hero .search-wrapper .search-form__button,
-.hero-about .search-wrapper .search-form__button,
-.hero-offers .search-wrapper .search-form__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  width: 180px;
-  height: 2.5rem;
-  margin-top: 0.75rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 1.25rem;
-  color: #36446d;
-  cursor: pointer;
-  padding: 0;
-}
-
-.hero .search-wrapper .search-form__button--icon,
-.hero-about .search-wrapper .search-form__button--icon,
-.hero-offers .search-wrapper .search-form__button--icon {
-  height: 40%;
-  width: auto;
-  max-width: 16px;
-  margin-right: 0.5rem;
-}
-
-@media (orientation: landscape) {
-  .hero .search-wrapper,
-  .hero-about .search-wrapper,
-  .hero-offers .search-wrapper {
-    width: 100%;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
-    top: 1.5rem;
-    right: 1.4rem;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
-    margin: 0.5rem;
   }
 }
 
@@ -841,56 +621,7 @@ template {
   .hero-about__title::after,
   .hero-offers__title::after {
     width: 30%;
-    bottom: .8rem;
-  }
-  .hero .search-wrapper,
-  .hero-about .search-wrapper,
-  .hero-offers .search-wrapper {
-    height: 20%;
-    width: 100%;
-  }
-  .hero .search-wrapper .search-form,
-  .hero-about .search-wrapper .search-form,
-  .hero-offers .search-wrapper .search-form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
-    margin: 0;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .select-arrow {
-    top: 19px;
-    right: 1.2rem;
-  }
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-offers .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
-    height: 2rem;
-    margin: 0.5rem;
-  }
-  .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button,
-  .hero-offers .search-wrapper .search-form__button {
-    font-family: "Roboto", sans-serif;
-    height: 2rem;
-    margin: 0.5rem;
+    bottom: 0.8rem;
   }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
@@ -947,20 +678,6 @@ template {
     width: 30%;
     bottom: 1.05rem;
   }
-  .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-about .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction,
-  .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__property,
-  .hero-offers .search-wrapper .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
-    font-size: 0.8rem;
-  }
-  .hero .search-wrapper__button--icon,
-  .hero-about .search-wrapper__button--icon,
-  .hero-offers .search-wrapper__button--icon {
-    height: 40%;
-    margin-right: 1rem;
-  }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
   .hero-offers .hero-image-description-wrapper {
@@ -994,19 +711,6 @@ template {
     width: 30%;
     height: 3px;
     bottom: 1.15rem;
-  }
-  .hero .search-wrapper,
-  .hero-about .search-wrapper,
-  .hero-offers .search-wrapper {
-    bottom: 2rem;
-    width: 60%;
-    max-height: 140px;
-  }
-  .hero .search-wrapper .search-form__button,
-  .hero-about .search-wrapper .search-form__button,
-  .hero-offers .search-wrapper .search-form__button {
-    height: 2rem;
-    margin-top: 0.5rem;
   }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
@@ -2686,6 +2390,9 @@ template {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  text-align: center;
+  text-align-last: center;
+  padding-right: 12px;
 }
 
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select::-ms-expand {
@@ -2694,8 +2401,8 @@ template {
 
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover,
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus {
-  color: #ffffff;
-  background: #36446d;
+  color: #36446d;
+  background: #ffffff;
 }
 
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled {
@@ -2720,7 +2427,7 @@ template {
 
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:hover ~ .select-arrow,
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:focus ~ .select-arrow {
-  border-color: #ffffff;
+  border-color: #36446d;
 }
 
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper select:disabled ~ .select-arrow {
@@ -2730,7 +2437,7 @@ template {
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__property,
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper .search-form__transaction {
   font-family: "Roboto", sans-serif;
-  width: 200px;
+  width: 220px;
   height: 2.5rem;
   font-size: 0.9rem;
   border-radius: 1.25rem;
@@ -2821,7 +2528,7 @@ template {
     margin: 0.5rem;
   }
   .search .search-wrapper .search-form__button {
-    width: 200px;
+    width: 220px;
     font-family: "Roboto", sans-serif;
     height: 2rem;
     margin: 0.5rem;

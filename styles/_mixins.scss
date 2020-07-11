@@ -88,14 +88,17 @@
     background: #ffffff;
     color: #36446d;
     appearance: none;
+    text-align: center;
+    text-align-last: center;
+    padding-right: 12px;
   }
    select::-ms-expand {
     display: none;
   }
    select:hover,
    select:focus {
-    color: #ffffff;
-    background: #36446d;
+    color: #36446d;
+    background: #ffffff;
   }
    select:disabled {
     opacity: 0.5;
@@ -117,7 +120,7 @@
   }
    select:hover ~ .select-arrow,
    select:focus ~ .select-arrow {
-    border-color: #ffffff;
+    border-color: #36446d;
   }
    select:disabled ~ .select-arrow {
     border-top-color: #cccccc;
