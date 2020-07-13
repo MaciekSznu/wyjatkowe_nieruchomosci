@@ -3,7 +3,7 @@
 
 .hero,
 .hero-about,
-.hero-offers {
+.hero-offers, .hero-services {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   max-width: 100vw;
   height: calc(80vw + #{$top-bar-height});
   max-height: 600px;
-  background-image: url("./images/heroes/interior_06_768_512.jpg");
+  background-image: url("./images/heroes/contact_768_432.jpg");
   background-position: center;
   background-size: cover;
 
@@ -78,7 +78,7 @@
   @media (min-width: 768px) {
     height: 50vh;
     max-height: 600px;
-    background-image: url("./images/heroes/interior_06_1024_683.jpg");
+    background-image: url("./images/heroes/contact_1024_576.jpg");
 
     &__title {
       bottom: 1.5rem;
@@ -112,7 +112,7 @@
     padding-top: 90px;
     height: 100vh;
     max-height: 100vh;
-    background-image: url("./images/heroes/interior_06_1280_853.jpg");
+    background-image: url("./images/heroes/contact_1920_1080.jpg");
 
     @media (orientation: portrait) {
       height: 75vh;
@@ -141,7 +141,7 @@
   }
 
   @media (min-width: 1280px) {
-    background-image: url("./images/heroes/interior_06_1920_1280.jpg");
+    // background-image: url("./images/heroes/contact_1920_1080.jpg");
 
     &__title {
       bottom: 2.5rem;
@@ -171,13 +171,66 @@
 }
 
 .hero-offers {
+  background-image: url("./images/heroes/offers_1024_532.jpg");
+
+  .hero__title {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+  }
+
   @media (min-width: 1024px) {
+    background-image: url("./images/heroes/offers_1920_998.jpg");
     height: calc(100vh - 112px);
     max-height: calc(100vh - 112px);
 
     @media (orientation: portrait) {
       height: 75vh;
       max-height: 75vh;
+    }
+  }
+}
+
+.hero-services {
+  background-image: url("./images/heroes/services_1024_576.jpg");
+
+  .hero__title {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin: 0;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-family: $text-font-family;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+      background-image: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero__title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url("./images/heroes/services_1920_1080.jpg");
+    .hero__title {
+      font-size: 3rem;
+    }
+    // height: calc(100vh - 112px);
+    // max-height: calc(100vh - 112px);
+
+    @media (orientation: portrait) {
+      // height: 75vh;
+      // max-height: 75vh;
     }
   }
 }
