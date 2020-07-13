@@ -503,7 +503,8 @@ template {
 
 .hero,
 .hero-about,
-.hero-offers, .hero-services {
+.hero-offers,
+.hero-services {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,7 +529,8 @@ template {
 
 .hero__title,
 .hero-about__title,
-.hero-offers__title, .hero-services__title {
+.hero-offers__title,
+.hero-services__title {
   position: absolute;
   bottom: 1rem;
   width: 100%;
@@ -545,7 +547,8 @@ template {
 
 .hero__title::after,
 .hero-about__title::after,
-.hero-offers__title::after, .hero-services__title::after {
+.hero-offers__title::after,
+.hero-services__title::after {
   position: absolute;
   content: "";
   width: 40%;
@@ -562,7 +565,8 @@ template {
 @media (orientation: landscape) {
   .hero,
   .hero-about,
-  .hero-offers, .hero-services {
+  .hero-offers,
+  .hero-services {
     height: 100vh;
     max-height: calc(100vh - 60px * 2);
   }
@@ -570,7 +574,8 @@ template {
 
 .hero .hero-image-description-wrapper,
 .hero-about .hero-image-description-wrapper,
-.hero-offers .hero-image-description-wrapper, .hero-services .hero-image-description-wrapper {
+.hero-offers .hero-image-description-wrapper,
+.hero-services .hero-image-description-wrapper {
   position: absolute;
   right: 0;
   bottom: 4.5rem;
@@ -584,7 +589,8 @@ template {
 
 .hero .hero-image-description-wrapper .hero-image-description,
 .hero-about .hero-image-description-wrapper .hero-image-description,
-.hero-offers .hero-image-description-wrapper .hero-image-description, .hero-services .hero-image-description-wrapper .hero-image-description {
+.hero-offers .hero-image-description-wrapper .hero-image-description,
+.hero-services .hero-image-description-wrapper .hero-image-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,7 +603,9 @@ template {
 .hero-about .hero-image-description-wrapper .hero-image-description--city,
 .hero-about .hero-image-description-wrapper .hero-image-description--price,
 .hero-offers .hero-image-description-wrapper .hero-image-description--city,
-.hero-offers .hero-image-description-wrapper .hero-image-description--price, .hero-services .hero-image-description-wrapper .hero-image-description--city, .hero-services .hero-image-description-wrapper .hero-image-description--price {
+.hero-offers .hero-image-description-wrapper .hero-image-description--price,
+.hero-services .hero-image-description-wrapper .hero-image-description--city,
+.hero-services .hero-image-description-wrapper .hero-image-description--price {
   width: 100%;
   margin: 0.25rem 0;
 }
@@ -605,41 +613,48 @@ template {
 @media (min-width: 768px) {
   .hero,
   .hero-about,
-  .hero-offers, .hero-services {
+  .hero-offers,
+  .hero-services {
     height: 50vh;
     max-height: 600px;
     background-image: url("./images/heroes/contact_1024_576.jpg");
   }
   .hero__title,
   .hero-about__title,
-  .hero-offers__title, .hero-services__title {
+  .hero-offers__title,
+  .hero-services__title {
     bottom: 1.5rem;
     font-size: 2rem;
     padding: 1rem 0;
   }
   .hero__title::after,
   .hero-about__title::after,
-  .hero-offers__title::after, .hero-services__title::after {
+  .hero-offers__title::after,
+  .hero-services__title::after {
     width: 30%;
     bottom: 0.8rem;
   }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
-  .hero-offers .hero-image-description-wrapper, .hero-services .hero-image-description-wrapper {
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
     bottom: 6.5rem;
     font-size: 1rem;
     font-weight: 400;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
   .hero-about .hero-image-description-wrapper .hero-image-description,
-  .hero-offers .hero-image-description-wrapper .hero-image-description, .hero-services .hero-image-description-wrapper .hero-image-description {
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
     margin-left: 2rem;
   }
   .hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
   .hero-about .hero-image-description-wrapper .hero-image-description--city,
   .hero-about .hero-image-description-wrapper .hero-image-description--price,
   .hero-offers .hero-image-description-wrapper .hero-image-description--city,
-  .hero-offers .hero-image-description-wrapper .hero-image-description--price, .hero-services .hero-image-description-wrapper .hero-image-description--city, .hero-services .hero-image-description-wrapper .hero-image-description--price {
+  .hero-offers .hero-image-description-wrapper .hero-image-description--price,
+  .hero-services .hero-image-description-wrapper .hero-image-description--city,
+  .hero-services .hero-image-description-wrapper .hero-image-description--price {
     margin: 0.5rem 0;
   }
 }
@@ -647,7 +662,8 @@ template {
 @media (min-width: 1024px) {
   .hero,
   .hero-about,
-  .hero-offers, .hero-services {
+  .hero-offers,
+  .hero-services {
     margin-top: 0;
     padding-top: 90px;
     height: 100vh;
@@ -659,7 +675,8 @@ template {
 @media (min-width: 1024px) and (orientation: portrait) {
   .hero,
   .hero-about,
-  .hero-offers, .hero-services {
+  .hero-offers,
+  .hero-services {
     height: 75vh;
     max-height: 75vh;
   }
@@ -668,26 +685,30 @@ template {
 @media (min-width: 1024px) {
   .hero__title,
   .hero-about__title,
-  .hero-offers__title, .hero-services__title {
+  .hero-offers__title,
+  .hero-services__title {
     font-size: 2.5rem;
     padding: 1.25rem 0;
   }
   .hero__title::after,
   .hero-about__title::after,
-  .hero-offers__title::after, .hero-services__title::after {
+  .hero-offers__title::after,
+  .hero-services__title::after {
     width: 30%;
     bottom: 1.05rem;
   }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
-  .hero-offers .hero-image-description-wrapper, .hero-services .hero-image-description-wrapper {
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
     bottom: 8rem;
     font-size: 1.15rem;
     font-weight: 300;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
   .hero-about .hero-image-description-wrapper .hero-image-description,
-  .hero-offers .hero-image-description-wrapper .hero-image-description, .hero-services .hero-image-description-wrapper .hero-image-description {
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
     margin-left: 3rem;
   }
 }
@@ -695,27 +716,31 @@ template {
 @media (min-width: 1280px) {
   .hero__title,
   .hero-about__title,
-  .hero-offers__title, .hero-services__title {
+  .hero-offers__title,
+  .hero-services__title {
     bottom: 2.5rem;
     font-size: 3rem;
     padding: 1.35rem 0;
   }
   .hero__title::after,
   .hero-about__title::after,
-  .hero-offers__title::after, .hero-services__title::after {
+  .hero-offers__title::after,
+  .hero-services__title::after {
     width: 30%;
     height: 3px;
     bottom: 1.15rem;
   }
   .hero .hero-image-description-wrapper,
   .hero-about .hero-image-description-wrapper,
-  .hero-offers .hero-image-description-wrapper, .hero-services .hero-image-description-wrapper {
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
     bottom: 10rem;
     font-size: 1.25rem;
   }
   .hero .hero-image-description-wrapper .hero-image-description,
   .hero-about .hero-image-description-wrapper .hero-image-description,
-  .hero-offers .hero-image-description-wrapper .hero-image-description, .hero-services .hero-image-description-wrapper .hero-image-description {
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
     margin-left: 4rem;
   }
 }
@@ -763,7 +788,7 @@ template {
   font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -2418,7 +2443,7 @@ template {
 .search .search-wrapper .search-form .search-form-selects-wrapper .single-select-wrapper {
   position: relative;
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 
@@ -2426,7 +2451,7 @@ template {
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  padding-left: .9rem;
+  padding-left: 0.9rem;
   outline: 0;
   border: 1px solid #36446d;
   border-radius: 0px;
@@ -2459,7 +2484,7 @@ template {
   position: absolute;
   cursor: pointer;
   top: 15px;
-  right: .9rem;
+  right: 0.9rem;
   width: 6px;
   height: 6px;
   border: solid #36446d;
@@ -2632,11 +2657,5 @@ template {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-.filler {
-  height: 60px;
-  width: 100%;
-  background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */

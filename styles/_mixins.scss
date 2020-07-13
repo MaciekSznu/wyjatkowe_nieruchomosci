@@ -71,17 +71,16 @@
 // }
 
 @mixin select-item {
-  
   position: relative;
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
 
   select {
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    padding-left: .9rem;
+    padding-left: 0.9rem;
     outline: 0;
     border: 1px solid #36446d;
     border-radius: 0px;
@@ -92,15 +91,15 @@
     text-align-last: center;
     padding-right: 12px;
   }
-   select::-ms-expand {
+  select::-ms-expand {
     display: none;
   }
-   select:hover,
-   select:focus {
+  select:hover,
+  select:focus {
     color: #36446d;
     background: #ffffff;
   }
-   select:disabled {
+  select:disabled {
     opacity: 0.5;
     pointer-events: none;
   }
@@ -108,7 +107,7 @@
     position: absolute;
     cursor: pointer;
     top: 15px;
-    right: .9rem;
+    right: 0.9rem;
     width: 6px;
     height: 6px;
     border: solid #36446d;
@@ -118,11 +117,11 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
-   select:hover ~ .select-arrow,
-   select:focus ~ .select-arrow {
+  select:hover ~ .select-arrow,
+  select:focus ~ .select-arrow {
     border-color: #36446d;
   }
-   select:disabled ~ .select-arrow {
+  select:disabled ~ .select-arrow {
     border-top-color: #cccccc;
   }
 }

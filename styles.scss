@@ -1,19 +1,18 @@
-@import './styles/normalize';
-@import './styles/variables';
-@import './styles/mixins';
-@import './styles/header';
-@import './styles/hero';
-@import './styles/about';
-@import './styles/contact';
-@import './styles/social';
-@import './styles/menu-toggler';
-@import './styles/new-offers';
-@import './styles/investments';
-@import './styles/single-offer';
-@import './styles/search';
+@import "./styles/normalize";
+@import "./styles/variables";
+@import "./styles/mixins";
+@import "./styles/header";
+@import "./styles/hero";
+@import "./styles/about";
+@import "./styles/contact";
+@import "./styles/social";
+@import "./styles/menu-toggler";
+@import "./styles/new-offers";
+@import "./styles/investments";
+@import "./styles/single-offer";
+@import "./styles/search";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap");
 
 *,
 ::after,
@@ -29,10 +28,4 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-.filler {
-  height: 60px;
-  width: 100%;
-  background-color: transparent;
 }

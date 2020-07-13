@@ -3,7 +3,8 @@
 
 .hero,
 .hero-about,
-.hero-offers, .hero-services {
+.hero-offers,
+.hero-services {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -204,7 +205,7 @@
     font-size: 1.25rem;
     font-family: $text-font-family;
     font-weight: 500;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     color: white;
     text-align: center;
     text-transform: uppercase;
