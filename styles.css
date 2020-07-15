@@ -572,6 +572,44 @@ template {
   }
 }
 
+.hero .hero-image-description-wrapper,
+.hero-about .hero-image-description-wrapper,
+.hero-offers .hero-image-description-wrapper,
+.hero-services .hero-image-description-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 3rem;
+  width: 50%;
+  background-color: rgba(54, 68, 109, 0.75);
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.hero .hero-image-description-wrapper .hero-image-description,
+.hero-about .hero-image-description-wrapper .hero-image-description,
+.hero-offers .hero-image-description-wrapper .hero-image-description,
+.hero-services .hero-image-description-wrapper .hero-image-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0.5rem 1rem;
+}
+
+.hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
+.hero-about .hero-image-description-wrapper .hero-image-description--city,
+.hero-about .hero-image-description-wrapper .hero-image-description--price,
+.hero-offers .hero-image-description-wrapper .hero-image-description--city,
+.hero-offers .hero-image-description-wrapper .hero-image-description--price,
+.hero-services .hero-image-description-wrapper .hero-image-description--city,
+.hero-services .hero-image-description-wrapper .hero-image-description--price {
+  width: 100%;
+  margin: 0.25rem 0;
+}
+
 @media (min-width: 768px) {
   .hero,
   .hero-about,
@@ -595,6 +633,29 @@ template {
   .hero-services__title::after {
     width: 30%;
     bottom: 0.8rem;
+  }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
+    bottom: 4rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
+    margin-left: 2rem;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description--city, .hero .hero-image-description-wrapper .hero-image-description--price,
+  .hero-about .hero-image-description-wrapper .hero-image-description--city,
+  .hero-about .hero-image-description-wrapper .hero-image-description--price,
+  .hero-offers .hero-image-description-wrapper .hero-image-description--city,
+  .hero-offers .hero-image-description-wrapper .hero-image-description--price,
+  .hero-services .hero-image-description-wrapper .hero-image-description--city,
+  .hero-services .hero-image-description-wrapper .hero-image-description--price {
+    margin: 0.5rem 0;
   }
 }
 
@@ -636,6 +697,20 @@ template {
     width: 30%;
     bottom: 1.05rem;
   }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
+    bottom: 8rem;
+    font-size: 1.15rem;
+    font-weight: 300;
+  }
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
+    margin-left: 3rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -654,6 +729,31 @@ template {
     width: 30%;
     height: 3px;
     bottom: 1.15rem;
+  }
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
+    bottom: 4rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 960px) {
+  .hero .hero-image-description-wrapper,
+  .hero-about .hero-image-description-wrapper,
+  .hero-offers .hero-image-description-wrapper,
+  .hero-services .hero-image-description-wrapper {
+    bottom: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero .hero-image-description-wrapper .hero-image-description,
+  .hero-about .hero-image-description-wrapper .hero-image-description,
+  .hero-offers .hero-image-description-wrapper .hero-image-description,
+  .hero-services .hero-image-description-wrapper .hero-image-description {
+    margin-left: 4rem;
   }
 }
 
