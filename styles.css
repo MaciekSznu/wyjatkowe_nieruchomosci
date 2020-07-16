@@ -800,8 +800,8 @@ template {
 @media (min-width: 1024px) {
   .hero-offers {
     background-image: url("./images/heroes/offers_1920_998.jpg");
-    height: calc(100vh - 112px);
-    max-height: calc(100vh - 112px);
+    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
   }
 }
 
@@ -2633,6 +2633,9 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .search .search-wrapper {
+    padding: 1rem 0 1rem;
   }
 }
 

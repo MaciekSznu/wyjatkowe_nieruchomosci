@@ -198,8 +198,8 @@
 
   @media (min-width: 1024px) {
     background-image: url("./images/heroes/offers_1920_998.jpg");
-    height: calc(100vh - 112px);
-    max-height: calc(100vh - 112px);
+    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
 
     @media (orientation: portrait) {
       height: 75vh;
