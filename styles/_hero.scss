@@ -65,12 +65,14 @@
 
     .hero-image-description {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      // flex-wrap: wrap;
       margin: 0.5rem 1rem;
 
       &--city,
       &--price {
-        width: 100%;
+        // width: 100%;
         margin: 0.25rem 0;
       }
     }
@@ -136,7 +138,10 @@
       font-weight: 300;
 
       .hero-image-description {
-        margin-left: 3rem;
+        margin: 1rem 1.5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
       }
     }
   }
@@ -164,7 +169,7 @@
       }
 
       .hero-image-description {
-        margin-left: 4rem;
+        margin: 1.25rem 2rem;
       }
     }
   }
@@ -204,15 +209,15 @@
 }
 
 .hero-services {
-  background-image: url("./images/heroes/krakow_01_768_522.jpg");
-  filter: brightness(85%);
+  background-image: url("./images/heroes/krakow_01_768_522_dark.jpg");
+  // filter: brightness(85%);
 
   @media (min-width: 768px) {
-    background-image: url("./images/heroes/krakow_01_1024_697.jpg");
+    background-image: url("./images/heroes/krakow_01_1024_697_dark.jpg");
   }
 
   @media (min-width: 1024px) {
-    background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
+    background-image: url("./images/heroes/krakow_01_1920_1306_dark.jpg");
   }
 }
 

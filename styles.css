@@ -417,9 +417,9 @@ template {
   letter-spacing: 3px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .header .menu.visible {
@@ -594,8 +594,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0.5rem 1rem;
 }
 
@@ -606,7 +611,6 @@ template {
 .hero-offers .hero-image-description-wrapper .hero-image-description--price,
 .hero-services .hero-image-description-wrapper .hero-image-description--city,
 .hero-services .hero-image-description-wrapper .hero-image-description--price {
-  width: 100%;
   margin: 0.25rem 0;
 }
 
@@ -709,7 +713,17 @@ template {
   .hero-about .hero-image-description-wrapper .hero-image-description,
   .hero-offers .hero-image-description-wrapper .hero-image-description,
   .hero-services .hero-image-description-wrapper .hero-image-description {
-    margin-left: 3rem;
+    margin: 1rem 1.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -753,7 +767,7 @@ template {
   .hero-about .hero-image-description-wrapper .hero-image-description,
   .hero-offers .hero-image-description-wrapper .hero-image-description,
   .hero-services .hero-image-description-wrapper .hero-image-description {
-    margin-left: 4rem;
+    margin: 1.25rem 2rem;
   }
 }
 
@@ -799,20 +813,18 @@ template {
 }
 
 .hero-services {
-  background-image: url("./images/heroes/krakow_01_768_522.jpg");
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+  background-image: url("./images/heroes/krakow_01_768_522_dark.jpg");
 }
 
 @media (min-width: 768px) {
   .hero-services {
-    background-image: url("./images/heroes/krakow_01_1024_697.jpg");
+    background-image: url("./images/heroes/krakow_01_1024_697_dark.jpg");
   }
 }
 
 @media (min-width: 1024px) {
   .hero-services {
-    background-image: url("./images/heroes/krakow_01_1920_1306.jpg");
+    background-image: url("./images/heroes/krakow_01_1920_1306_dark.jpg");
   }
 }
 
