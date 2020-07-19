@@ -344,6 +344,7 @@ template {
 
 .header {
   width: 100%;
+  max-width: 100vw;
   height: 60px;
   background-color: #002349;
   position: fixed;
@@ -1033,7 +1034,7 @@ template {
           flex-direction: column;
 }
 
-.contact--adress-wrapper {
+.contact-adress-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1050,18 +1051,18 @@ template {
   margin-bottom: 1.5rem;
 }
 
-.contact--adress-wrapper .contact__content-logo {
+.contact-adress-wrapper .contact__content-logo {
   width: 100%;
   height: 60px;
   margin: 0;
 }
 
-.contact--adress-wrapper .contact__content-logo .logo__image {
+.contact-adress-wrapper .contact__content-logo .logo__image {
   height: 90%;
   width: auto;
 }
 
-.contact--adress-wrapper .contact__content {
+.contact-adress-wrapper .contact__content {
   margin: 0;
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
@@ -1070,23 +1071,23 @@ template {
   margin: 0.35rem 0;
 }
 
-.contact--adress-wrapper .contact__content .contact-icon {
+.contact-adress-wrapper .contact__content .contact-icon {
   height: 1rem;
   width: auto;
   margin-right: 0.5rem;
 }
 
-.contact--adress-wrapper .contact__content:nth-of-type(2) {
+.contact-adress-wrapper .contact__content:nth-of-type(2) {
   margin-left: 24px;
 }
 
-.contact--adress-wrapper .contact__content--cta {
+.contact-adress-wrapper .contact__content--cta {
   height: auto;
   width: 100%;
   margin: 0.35rem 0;
 }
 
-.contact--adress-wrapper .contact__content--cta-link {
+.contact-adress-wrapper .contact__content--cta-link {
   font-size: 0.9rem;
   text-decoration: none;
   color: #ffffff;
@@ -1102,17 +1103,17 @@ template {
   transition: color 1s ease;
 }
 
-.contact--adress-wrapper .contact__content--cta-link .contact-icon {
+.contact-adress-wrapper .contact__content--cta-link .contact-icon {
   height: 1rem;
   width: auto;
   margin-right: 0.5rem;
 }
 
-.contact--adress-wrapper .contact__content--cta:hover .contact__content--cta-link {
+.contact-adress-wrapper .contact__content--cta:hover .contact__content--cta-link {
   color: #CD9B32;
 }
 
-.contact--footer-menu-wrapper {
+.contact-footer-menu-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1129,7 +1130,7 @@ template {
   border-top: 1px solid #fff;
 }
 
-.contact--footer-menu-wrapper .footer-menu-title {
+.contact-footer-menu-wrapper .footer-menu-title {
   margin-top: 1.5rem;
   margin-bottom: 0;
   color: #ffffff;
@@ -1139,12 +1140,12 @@ template {
   font-size: 0.9rem;
 }
 
-.contact--footer-menu-wrapper .footer-menu {
+.contact-footer-menu-wrapper .footer-menu {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
-.contact--footer-menu-wrapper .footer-menu__list {
+.contact-footer-menu-wrapper .footer-menu__list {
   width: 100%;
   list-style: none;
   margin: 0;
@@ -1152,7 +1153,7 @@ template {
   text-transform: uppercase;
 }
 
-.contact--footer-menu-wrapper .footer-menu__list-item {
+.contact-footer-menu-wrapper .footer-menu__list-item {
   width: 100px;
   margin: 0.25rem 0;
   border-bottom: 1px solid transparent;
@@ -1160,11 +1161,11 @@ template {
   transition: border-color 1s ease;
 }
 
-.contact--footer-menu-wrapper .footer-menu__list-item:hover {
+.contact-footer-menu-wrapper .footer-menu__list-item:hover {
   border-color: #ffffff;
 }
 
-.contact--footer-menu-wrapper .footer-menu__list-item a {
+.contact-footer-menu-wrapper .footer-menu__list-item a {
   font-size: 0.9rem;
   color: #ffffff;
   text-decoration: none;
@@ -1172,7 +1173,7 @@ template {
   font-weight: 300;
 }
 
-.contact--form-wrapper {
+.contact-form-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,7 +1190,7 @@ template {
   border-top: 1px solid #fff;
 }
 
-.contact--form-wrapper .contact-form {
+.contact-form-wrapper .contact-form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1204,7 +1205,7 @@ template {
   margin-top: 1rem;
 }
 
-.contact--form-wrapper .contact-form--input-name, .contact--form-wrapper .contact-form--input-email, .contact--form-wrapper .contact-form--input-phone, .contact--form-wrapper .contact-form--input-message, .contact--form-wrapper .contact-form--input-submit {
+.contact-form-wrapper .contact-form--input-name, .contact-form-wrapper .contact-form--input-email, .contact-form-wrapper .contact-form--input-phone, .contact-form-wrapper .contact-form--input-message, .contact-form-wrapper .contact-form--input-submit {
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.5rem;
@@ -1217,27 +1218,27 @@ template {
   font-size: 0.9rem;
 }
 
-.contact--form-wrapper .contact-form--input-name:focus, .contact--form-wrapper .contact-form--input-email:focus, .contact--form-wrapper .contact-form--input-phone:focus, .contact--form-wrapper .contact-form--input-message:focus, .contact--form-wrapper .contact-form--input-submit:focus {
+.contact-form-wrapper .contact-form--input-name:focus, .contact-form-wrapper .contact-form--input-email:focus, .contact-form-wrapper .contact-form--input-phone:focus, .contact-form-wrapper .contact-form--input-message:focus, .contact-form-wrapper .contact-form--input-submit:focus {
   outline: none;
 }
 
-.contact--form-wrapper .contact-form--input-name:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover::-webkit-input-placeholder {
+.contact-form-wrapper .contact-form--input-name:hover::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-email:hover::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-phone:hover::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-message:hover::-webkit-input-placeholder {
   color: #CD9B32;
 }
 
-.contact--form-wrapper .contact-form--input-name:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover:-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-name:hover:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-email:hover:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-phone:hover:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-message:hover:-ms-input-placeholder {
   color: #CD9B32;
 }
 
-.contact--form-wrapper .contact-form--input-name:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:hover::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:hover::-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-name:hover::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-email:hover::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-phone:hover::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-message:hover::-ms-input-placeholder {
   color: #CD9B32;
 }
 
-.contact--form-wrapper .contact-form--input-name:hover::placeholder, .contact--form-wrapper .contact-form--input-email:hover::placeholder, .contact--form-wrapper .contact-form--input-phone:hover::placeholder, .contact--form-wrapper .contact-form--input-message:hover::placeholder {
+.contact-form-wrapper .contact-form--input-name:hover::placeholder, .contact-form-wrapper .contact-form--input-email:hover::placeholder, .contact-form-wrapper .contact-form--input-phone:hover::placeholder, .contact-form-wrapper .contact-form--input-message:hover::placeholder {
   color: #CD9B32;
 }
 
-.contact--form-wrapper .contact-form--input-name::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-email::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-webkit-input-placeholder, .contact--form-wrapper .contact-form--input-message::-webkit-input-placeholder {
+.contact-form-wrapper .contact-form--input-name::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-email::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-phone::-webkit-input-placeholder, .contact-form-wrapper .contact-form--input-message::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -1246,7 +1247,7 @@ template {
   transition: color 1s ease;
 }
 
-.contact--form-wrapper .contact-form--input-name:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone:-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message:-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-name:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-email:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-phone:-ms-input-placeholder, .contact-form-wrapper .contact-form--input-message:-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -1255,7 +1256,7 @@ template {
   transition: color 1s ease;
 }
 
-.contact--form-wrapper .contact-form--input-name::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-email::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-phone::-ms-input-placeholder, .contact--form-wrapper .contact-form--input-message::-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-name::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-email::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-phone::-ms-input-placeholder, .contact-form-wrapper .contact-form--input-message::-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -1264,7 +1265,7 @@ template {
   transition: color 1s ease;
 }
 
-.contact--form-wrapper .contact-form--input-name::placeholder, .contact--form-wrapper .contact-form--input-email::placeholder, .contact--form-wrapper .contact-form--input-phone::placeholder, .contact--form-wrapper .contact-form--input-message::placeholder {
+.contact-form-wrapper .contact-form--input-name::placeholder, .contact-form-wrapper .contact-form--input-email::placeholder, .contact-form-wrapper .contact-form--input-phone::placeholder, .contact-form-wrapper .contact-form--input-message::placeholder {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -1273,30 +1274,30 @@ template {
   transition: color 1s ease;
 }
 
-.contact--form-wrapper .contact-form--input-message {
+.contact-form-wrapper .contact-form--input-message {
   height: 100px;
   resize: none;
 }
 
-.contact--form-wrapper .contact-form--input-message::-webkit-input-placeholder {
+.contact-form-wrapper .contact-form--input-message::-webkit-input-placeholder {
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
 }
 
-.contact--form-wrapper .contact-form--input-message:-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-message:-ms-input-placeholder {
   transform: translateY(70px);
 }
 
-.contact--form-wrapper .contact-form--input-message::-ms-input-placeholder {
+.contact-form-wrapper .contact-form--input-message::-ms-input-placeholder {
   transform: translateY(70px);
 }
 
-.contact--form-wrapper .contact-form--input-message::placeholder {
+.contact-form-wrapper .contact-form--input-message::placeholder {
   -webkit-transform: translateY(70px);
           transform: translateY(70px);
 }
 
-.contact--form-wrapper .contact-form--input-submit {
+.contact-form-wrapper .contact-form--input-submit {
   max-width: 240px;
   margin: 1.5rem auto 0.5rem;
   border: 1px solid #ffffff;
@@ -1308,7 +1309,7 @@ template {
   transition: background-color 1s ease, color 1s ease;
 }
 
-.contact--form-wrapper .contact-form--input-submit:hover {
+.contact-form-wrapper .contact-form--input-submit:hover {
   color: #002349;
   background-color: white;
 }
@@ -1325,12 +1326,12 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .contact--adress-wrapper {
+  .contact-adress-wrapper {
     width: calc(50% - 30px);
     margin-bottom: 0;
     height: 160px;
   }
-  .contact--footer-menu-wrapper {
+  .contact-footer-menu-wrapper {
     width: calc(50% - 30px);
     height: 160px;
     border-left: 1px solid #fff;
@@ -1339,19 +1340,19 @@ template {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .contact--footer-menu-wrapper .footer-menu-title {
+  .contact-footer-menu-wrapper .footer-menu-title {
     padding-left: 1.5rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-  .contact--footer-menu-wrapper .footer-menu {
+  .contact-footer-menu-wrapper .footer-menu {
     margin-top: 0;
     padding-left: 1.5rem;
   }
-  .contact--form-wrapper {
+  .contact-form-wrapper {
     margin-top: 2rem;
   }
-  .contact--form-wrapper .contact-form {
+  .contact-form-wrapper .contact-form {
     margin-top: 0;
   }
 }
@@ -1361,16 +1362,16 @@ template {
     margin-bottom: 0;
     padding: 2rem calc((100vw - 1280px) / 2);
   }
-  .contact--adress-wrapper {
+  .contact-adress-wrapper {
     margin-left: 30px;
     max-width: 250px;
     height: 270px;
   }
-  .contact--footer-menu-wrapper {
+  .contact-footer-menu-wrapper {
     max-width: 250px;
     height: 270px;
   }
-  .contact--form-wrapper {
+  .contact-form-wrapper {
     margin-right: 30px;
     margin-top: 0;
     max-width: 400px;
@@ -1378,38 +1379,38 @@ template {
     border-left: 1px solid #fff;
     border-top: none;
   }
-  .contact--form-wrapper .contact-form {
+  .contact-form-wrapper .contact-form {
     margin-top: 0;
     padding-left: 1.5rem;
   }
-  .contact--form-wrapper .contact-form--input-name {
+  .contact-form-wrapper .contact-form--input-name {
     margin-top: 0;
   }
-  .contact--form-wrapper .contact-form--input-message {
+  .contact-form-wrapper .contact-form--input-message {
     height: 80px;
     resize: none;
   }
-  .contact--form-wrapper .contact-form--input-message::-webkit-input-placeholder {
+  .contact-form-wrapper .contact-form--input-message::-webkit-input-placeholder {
     -webkit-transform: translateY(52px);
             transform: translateY(52px);
   }
-  .contact--form-wrapper .contact-form--input-message:-ms-input-placeholder {
+  .contact-form-wrapper .contact-form--input-message:-ms-input-placeholder {
     transform: translateY(52px);
   }
-  .contact--form-wrapper .contact-form--input-message::-ms-input-placeholder {
+  .contact-form-wrapper .contact-form--input-message::-ms-input-placeholder {
     transform: translateY(52px);
   }
-  .contact--form-wrapper .contact-form--input-message::placeholder {
+  .contact-form-wrapper .contact-form--input-message::placeholder {
     -webkit-transform: translateY(52px);
             transform: translateY(52px);
   }
 }
 
 @media (min-width: 1400px) {
-  .contact--adress-wrapper {
+  .contact-adress-wrapper {
     margin-left: 0;
   }
-  .contact--form-wrapper {
+  .contact-form-wrapper {
     margin-right: 0;
   }
 }
@@ -1486,6 +1487,7 @@ template {
   bottom: 0;
   left: 0;
   width: 100%;
+  max-width: 100vw;
   height: 60px;
   background-color: #002349;
   z-index: 10;
@@ -2662,6 +2664,363 @@ template {
   }
 }
 
+.contact-page {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-page__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.contact-page__content-wrapper .contact-page__map {
+  width: 100%;
+  height: 100vw;
+  background-color: rgba(54, 68, 109, 0.75);
+  margin-bottom: 2rem;
+}
+
+.contact-page__content-wrapper .contact-page__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-page__content-wrapper .contact-page__content--title, .contact-page__content-wrapper .contact-page__content--phone, .contact-page__content-wrapper .contact-page__content--email, .contact-page__content-wrapper .contact-page__content--adress {
+  width: 100%;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.contact-page__content-wrapper .contact-page__content--title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.contact-page__content-wrapper .contact-page__content--phone, .contact-page__content-wrapper .contact-page__content--email, .contact-page__content-wrapper .contact-page__content--adress {
+  height: auto;
+  width: 100%;
+  margin: 0.35rem 0;
+}
+
+.contact-page__content-wrapper .contact-page__content--phone-link, .contact-page__content-wrapper .contact-page__content--email-link, .contact-page__content-wrapper .contact-page__content--adress-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content--phone-link .contact-icon, .contact-page__content-wrapper .contact-page__content--email-link .contact-icon, .contact-page__content-wrapper .contact-page__content--adress-link .contact-icon {
+  height: 1.15rem;
+  width: auto;
+  margin-right: 0.75rem;
+}
+
+.contact-page__content-wrapper .contact-page__content--phone:hover .contact-page__content-wrapper .contact-page__content--phone-link, .contact-page__content-wrapper .contact-page__content--email:hover .contact-page__content-wrapper .contact-page__content--phone-link, .contact-page__content-wrapper .contact-page__content--adress:hover .contact-page__content-wrapper .contact-page__content--phone-link, .contact-page__content-wrapper .contact-page__content--phone:hover .contact-page__content-wrapper .contact-page__content--email-link, .contact-page__content-wrapper .contact-page__content--email:hover .contact-page__content-wrapper .contact-page__content--email-link, .contact-page__content-wrapper .contact-page__content--adress:hover .contact-page__content-wrapper .contact-page__content--email-link, .contact-page__content-wrapper .contact-page__content--phone:hover .contact-page__content-wrapper .contact-page__content--adress-link, .contact-page__content-wrapper .contact-page__content--email:hover .contact-page__content-wrapper .contact-page__content--adress-link, .contact-page__content-wrapper .contact-page__content--adress:hover .contact-page__content-wrapper .contact-page__content--adress-link {
+  color: #CD9B32;
+}
+
+.contact-page__content-wrapper .contact-page__content--adress {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content--adress .contact-icon {
+  height: 1.15rem;
+  width: auto;
+  margin-right: 0.75rem;
+}
+
+.contact-page__content-wrapper .contact-page__content--adress:nth-of-type(2) {
+  padding-left: calc(1rem + 24px);
+}
+
+.contact-page__content-wrapper .contact-page__content--email {
+  margin-bottom: 1rem;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form {
+  width: 100%;
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-submit {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  border: 1px solid #002349;
+  color: #002349;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:focus, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:focus, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:focus, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:focus, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-submit:focus {
+  outline: none;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:hover::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:hover::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:hover::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:hover::-webkit-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:hover:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:hover:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:hover:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:hover:-ms-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:hover::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:hover::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:hover::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:hover::-ms-input-placeholder {
+  color: #CD9B32;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:hover::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:hover::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:hover::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:hover::placeholder {
+  color: #CD9B32;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone::-webkit-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::-webkit-input-placeholder {
+  color: #002349;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone:-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:-ms-input-placeholder {
+  color: #002349;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone::-ms-input-placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::-ms-input-placeholder {
+  color: #002349;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-name::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-email::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-phone::placeholder, .contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::placeholder {
+  color: #002349;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message {
+  height: 100px;
+  resize: none;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::-webkit-input-placeholder {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message:-ms-input-placeholder {
+  transform: translateY(70px);
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::-ms-input-placeholder {
+  transform: translateY(70px);
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-message::placeholder {
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-submit {
+  max-width: 240px;
+  margin: 1.5rem auto 0.5rem;
+  border: 1px solid #002349;
+  height: 2.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease, color 1s ease;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.contact-page__content-wrapper .contact-page__content .contact-form-wrapper .contact-form--input-submit:hover {
+  color: #ffffff;
+  background-color: #002349;
+}
+
+@media (orientation: landscape) {
+  .contact-page__content-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-page__content-wrapper .contact-page__map {
+    max-height: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-page__content-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  .contact-page__content-wrapper .contact-page__map {
+    width: 50%;
+    max-height: 550px;
+    background-color: rgba(54, 68, 109, 0.75);
+    margin: 1rem 0;
+  }
+  .contact-page__content-wrapper .contact-page__content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 50%;
+    height: 550px;
+    padding-right: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-page__content-wrapper {
+    margin-top: 7rem;
+  }
+  .contact-page__content-wrapper .contact-page__map {
+    max-height: 500px;
+  }
+  .contact-page__content-wrapper .contact-page__content {
+    height: 500px;
+  }
+  .contact-page__content-wrapper .contact-page__content .contact-form-wrapper {
+    width: 100%;
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-page__title {
+    font-size: 2.5rem;
+  }
+  .contact-page__content-wrapper {
+    max-width: 1280px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+  }
+  .contact-page__content-wrapper .contact-page__map {
+    min-width: 35%;
+  }
+  .contact-page__content-wrapper .contact-page__content {
+    margin-left: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -2677,5 +3036,7 @@ template {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
 }
 /*# sourceMappingURL=styles.css.map */
