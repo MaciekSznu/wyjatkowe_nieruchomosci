@@ -69,7 +69,7 @@
   }
 
   @media (min-width: 1024px) {
-    height: 90px;
+    height: $desktop-top-bar-height;
     display: flex;
     justify-content: space-between;
     align-items: center;

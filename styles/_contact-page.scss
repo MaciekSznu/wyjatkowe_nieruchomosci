@@ -7,12 +7,36 @@
   @include flex-center-center;
   flex-direction: column;
 
+  &__title {
+    margin: calc(#{$mobile-top-bar-height} + 1rem) 0 2rem;
+    font-size: 1.7rem;
+    font-family:$text-font-family;
+    font-weight: 500;
+    color: $new-offer-font-color;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 2rem 0 2rem;
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin: calc(#{$desktop-top-bar-height} + 1rem) 0 2rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
   &__content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-top: 5rem;
+    // margin-top: 5rem;
 
     .contact-page__map {
       width: 100%;
@@ -201,6 +225,8 @@
   }
 
   @media (min-width: 768px) {
+    min-height: calc(100vh - 124px - 60px);
+
     &__content-wrapper {
       flex-direction: row;
       margin-bottom: 2rem;
@@ -227,8 +253,9 @@
   }
 
   @media (min-width: 1024px) {
+    min-height: calc(100vh - 124px);
+
     &__content-wrapper {
-      margin-top: 7rem;
 
       .contact-page__map {
         max-height: 500px;
@@ -253,8 +280,8 @@
     &__content-wrapper {
       max-width: 1280px;
       flex-direction: row;
-      margin-bottom: 2rem;
-      margin-top: 8rem;
+      // margin-bottom: 2rem;
+      // margin-top: 8rem;
 
       .contact-page__map {
         min-width: 35%;
@@ -274,7 +301,7 @@
   height: auto;
   margin-top: 1rem;
   margin-bottom: 60px;
-  padding: 2rem 1rem;
+  padding: 1rem;
   background-color: $mobile-contact-bg-color;
   @include flex-center-center;
   flex-direction: column;
@@ -283,7 +310,6 @@
     width: 100%;
     @include flex-center-center;
     flex-direction: column;
-    margin-bottom: 1.5rem;
 
     .contact-logo {
       width: 100%;
@@ -298,8 +324,8 @@
 
     .contact-social {
       width: 100%;
-      @include flex-center-center;
       height: 60px;
+      @include flex-center-center;
 
       &--facebook, &--phone, &--instagram {
         width: 32px;
@@ -328,276 +354,67 @@
       }
     }
 
-    .contact__content {
-      margin: 0;
-      font-size: 0.9rem;
-      font-family: $text-font-family;
-      font-weight: 400;
-      color: $contact-font-color;
-      margin: 0.35rem 0;
-
-      .contact-icon {
-        height: 1rem;
-        width: auto;
-        margin-right: 0.5rem;
-      }
-
-      &:nth-of-type(2) {
-        margin-left: 24px;
-      }
-
-      &--cta {
-        height: auto;
-        width: 100%;
-        margin: 0.35rem 0;
-
-        &-link {
-          font-size: 0.9rem;
-          text-decoration: none;
-          color: $contact-font-color;
-          font-family: $text-font-family;
-          font-weight: 400;
-          display: flex;
-          align-items: center;
-          transition: color 1s ease;
-
-          .contact-icon {
-            height: 1rem;
-            width: auto;
-            margin-right: 0.5rem;
-          }
-        }
-
-        &:hover .contact__content--cta-link {
-          color: $base-gold-color;
-        }
-      }
-    }
-  }
-
-  &-footer-menu-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start;
-    border-top: 1px solid #fff;
-
-    .footer-menu-title {
-      margin-top: 1.5rem;
-      margin-bottom: 0;
-      color: $footer-mobile-menu-font-color;
-      text-transform: uppercase;
-      font-family: $footer-mobile-menu-font-family;
-      font-weight: 500;
-      font-size: 0.9rem;
-    }
-
-    .footer-menu {
-      margin-top: 0.75rem;
-      margin-bottom: 1.5rem;
-
-      &__list {
-        width: 100%;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-
-        &-item {
-          width: 100px;
-          margin: 0.25rem 0;
-          border-bottom: 1px solid transparent;
-          transition: border-color 1s ease;
-
-          &:hover {
-            border-color: $footer-mobile-menu-font-color;
-          }
-
-          a {
-            font-size: 0.9rem;
-            color: $footer-mobile-menu-font-color;
-            text-decoration: none;
-            font-family: $footer-mobile-menu-font-family;
-            font-weight: $footer-mobile-menu-font-weight;
-          }
-        }
-      }
-    }
-  }
-
-  &-footer-form-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start;
-    border-top: 1px solid #fff;
-
-    .contact-form {
+    .contact-copyright {
       width: 100%;
-      display: flex;
+      @include flex-center-center;
       flex-direction: column;
-      align-items: flex-start;
-      margin-top: 1rem;
 
-      &--input-name,
-      &--input-email,
-      &--input-phone,
-      &--input-message,
-      &--input-submit {
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-        background-color: $mobile-contact-bg-color;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid #ffffff;
-        color: $contact-font-color;
-        font-family: $text-font-family;
-        font-size: 0.9rem;
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-      &--input-name,
-      &--input-email,
-      &--input-phone,
-      &--input-message {
-        &:hover::placeholder {
-          color: $base-gold-color;
-        }
-      }
-
-      &--input-name::placeholder,
-      &--input-email::placeholder,
-      &--input-phone::placeholder,
-      &--input-message::placeholder {
+      &--description {
         color: $contact-font-color;
         font-family: $text-font-family;
         font-weight: 300;
-        font-size: 0.9rem;
-        transition: color 1s ease;
-      }
+        margin: .5rem 0;
+        font-size: .9rem;
 
-      &--input-message {
-        height: 100px;
-        resize: none;
-
-        &::placeholder {
-          transform: translateY(70px);
-        }
-      }
-
-      &--input-submit {
-        max-width: 240px;
-        margin: 1.5rem auto 0.5rem;
-        border: 1px solid #ffffff;
-        height: 2.25rem;
-        font-weight: 500;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 1s ease, color 1s ease;
-
-        &:hover {
-          color: $mobile-contact-bg-color;
-          background-color: white;
+        &-link {
+          color: $contact-font-color;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 700;
+          text-decoration: none;
         }
       }
     }
-  }
 
-  @media (min-width: 568px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @media (min-width: 568px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
-    &-adress-wrapper {
-      width: calc(50% - 30px);
-      margin-bottom: 0;
-      height: 160px;
-    }
-
-    &-footer-menu-wrapper {
-      width: calc(50% - 30px);
-      height: 160px;
-      border-left: 1px solid #fff;
-      border-top: none;
-      justify-content: flex-start;
-
-      .footer-menu-title {
-        padding-left: 1.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+      .contact-logo, .contact-social {
+        width: 50%;
       }
 
-      .footer-menu {
-        margin-top: 0;
-        padding-left: 1.5rem;
+      .contact-logo {
+        justify-content: flex-start;
       }
-    }
-
-    &-footer-form-wrapper {
-      margin-top: 2rem;
-
-      .contact-form {
-        margin-top: 0;
+      .contact-social {
+        justify-content: flex-end;
       }
-    }
-  }
 
-  @media (min-width: 1024px) {
-    margin-bottom: 0;
-    padding: 2rem calc((100vw - 1280px) / 2);
+      .contact-copyright {
+        flex-direction: row;
+        
+        &--description {
+          width: 50%;
 
-    &-adress-wrapper {
-      margin-left: 30px;
-      max-width: 250px;
-      height: 270px;
-    }
-
-    &-footer-menu-wrapper {
-      max-width: 250px;
-      height: 270px;
-    }
-
-    &-footer-form-wrapper {
-      margin-right: 30px;
-      margin-top: 0;
-      max-width: 400px;
-      height: 270px;
-      border-left: 1px solid #fff;
-      border-top: none;
-
-      .contact-form {
-        margin-top: 0;
-        padding-left: 1.5rem;
-
-        &--input-name {
-          margin-top: 0;
-        }
-
-        &--input-message {
-          height: 80px;
-          resize: none;
-
-          &::placeholder {
-            transform: translateY(52px);
+          &:nth-of-type(2) {
+            text-align: right;
+            padding-right: 10px;
           }
         }
       }
     }
   }
 
-  @media (min-width: 1400px) {
-    &-adress-wrapper {
-      margin-left: 0;
-    }
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
-    &-footer-form-wrapper {
-      margin-right: 0;
-    }
+  @media (min-width: 1024px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 1rem calc((100vw - 1280px) / 2);
   }
 }
