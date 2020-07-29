@@ -189,6 +189,10 @@
     &__description {
       padding: 2rem;
     }
+
+    &__contact {
+      justify-content: center;
+    }
   }
 
   @media (min-width: 1024px) {

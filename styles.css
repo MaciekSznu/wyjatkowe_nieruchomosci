@@ -2411,6 +2411,11 @@ template {
   .single-offer__description {
     padding: 2rem;
   }
+  .single-offer__contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 1024px) {
