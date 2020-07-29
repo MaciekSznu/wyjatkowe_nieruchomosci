@@ -1017,7 +1017,7 @@ template {
   height: auto;
   margin-top: 1rem;
   margin-bottom: 60px;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
   background-color: #002349;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,6 +1314,40 @@ template {
   background-color: white;
 }
 
+.contact-footer-copyright {
+  border-top: 1px solid #fff;
+  margin-top: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-footer-copyright--description {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: .5rem 0;
+  font-size: .9rem;
+}
+
+.contact-footer-copyright--description-link {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media (min-width: 568px) {
   .contact {
     -webkit-box-orient: horizontal;
@@ -1355,12 +1389,23 @@ template {
   .contact-footer-form-wrapper .contact-form {
     margin-top: 0;
   }
+  .contact-footer-copyright {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-footer-copyright--description {
+    width: 50%;
+  }
+  .contact-footer-copyright--description:nth-of-type(2) {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1024px) {
   .contact {
     margin-bottom: 0;
-    padding: 2rem calc((100vw - 1280px) / 2);
   }
   .contact-adress-wrapper {
     margin-left: 30px;
@@ -1403,6 +1448,12 @@ template {
   .contact-footer-form-wrapper .contact-form--input-message::placeholder {
     -webkit-transform: translateY(52px);
             transform: translateY(52px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    padding: 2rem calc((100vw - 1280px) / 2) 1rem;
   }
 }
 
