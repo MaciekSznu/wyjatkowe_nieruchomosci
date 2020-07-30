@@ -28,7 +28,8 @@
     background-color: $hero-image-description-bg-color;
     font-size: 1.25rem;
     font-family: $text-font-family;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: .125rem;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -210,7 +211,6 @@
 
 .hero-services {
   background-image: url("./images/heroes/krakow_01_768_522_dark.jpg");
-  // filter: brightness(85%);
 
   @media (min-width: 768px) {
     background-image: url("./images/heroes/krakow_01_1024_697_dark.jpg");
@@ -221,11 +221,3 @@
   }
 }
 
-// .hero::before {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   bottom: 0;
-//   border-bottom: 70vh solid $hero-image-description-bg-color;
-//   border-right: 70vh solid transparent;
-// }
